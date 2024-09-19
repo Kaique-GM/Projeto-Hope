@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# Projeto_Hope
-=======
 <p align="center">
 <img src="./img/LogoProjetoHope7.png" width="300"/>
 </p>
@@ -37,4 +34,3 @@ Confira o projeto em [https://link-para-o-projeto.com](https://link-para-o-proje
 - **Samuel Rodrigues** - **Back-End** - [![E-mail](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:samuelrodrigues40000@gmail.com) [![GitHub](https://img.shields.io/badge/GitHub-%23121011?style=for-the-badge&logo=github&logoColor=white)](https://github.com/SamuelProfissional)
 - **Victor Augusto** - **Front-End** - [![E-mail](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:victor.augusto.francisco.brotto@gmail.com) [![GitHub](https://img.shields.io/badge/GitHub-%23121011?style=for-the-badge&logo=github&logoColor=white)](https://github.com/VictorBrotto)
 - **Pedro Henrique** - **Front-End** - [![E-mail](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:pedrohenriquearruda158@gmail.com) [![GitHub](https://img.shields.io/badge/GitHub-%23121011?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PedroHArruda)
->>>>>>> 1e0bbb9 (Update README.md)
