@@ -4,29 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Hope</title>
+    <link rel="stylesheet" href = ../styles/global.css>
     <link rel="stylesheet" href = style.css>
+    <link rel="icon" href="../assets/img/IconProjetoHope.png" type="image/x-icon"> 
 </head>
 
 <body>
-    <header>
+
+    <header id="header">
+        <div class="navbar-logo">
+        <a href = index.html> 
+            <img class= "nav-logo" id="logo" src="../assets/img/LogoProjetoHope8.png" alt="Logo do Projeto"/> 
+        </a>
+        </div>
         <nav>
-            <img> 
-            <ul>
-                <li><a>início</a></li>
-                <li><a>energias renováveis</a></li>
-                <li><a>sobre nós</a></li>
+            <ul class="nav-items">
+                <li class="nav-item"><a href="index.html">início</a></li>
+                <li class="nav-item"><a href="../energiasolar/index.html">energias renováveis</a></li>
+                <li class="nav-item"><a href="../about/index.html">sobre nós</a></li>
             </ul>
         </nav>
     </header>
 
     <section>
-       
+
+            <div class="background-section">
+                <video src="../assets/videos/VideoBackground.mp4" autoplay muted loop></video>
+            </div>
     </section>
+   
 
 
     <section>
-
+        <div class="sustentabilidade-section">
+            <h2>energia renovável é o caminho para um mundo mais <br> verde e sustentável</h2>
+        </div>
 
     </section>
+
+    <section>
+        <div class="energiasolar">
+            <div class="energiasolar-imagem"> <img class="energiasolar-image" src="../assets/img/Imagem1.jpg"/></div>
+            <div class="energiasolar-description">
+                <h2>transforme seu futuro com energia solar</h2>
+                <p>Descubra como você pode economizar e contribuir para um planeta mais sustentável.</p>
+                <button>saiba mais</button>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>

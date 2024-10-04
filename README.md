@@ -1,5 +1,5 @@
 <p align="center">
-<img src="./img/LogoProjetoHope7.png" width="300"/>
+<img src="./views/assets/img/LogoProjetoHope7.png" width="300"/>
 </p>
 
 ## 📝🌍 Descrição

@@ -1,0 +1,55 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 4%;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    color: var(--title-second-color);
+    transition: 0.5s; 
+    width: 100%;
+ 
+    z-index: 1; 
+    cursor: pointer;
+
+ 
+ }
+ 
+ header.rolagem {
+     background-color: #fff;
+     color: var(--text-color); 
+     position: sticky; 
+ 
+    
+ 
+ }
+ 
+ header.rolagem a{
+     color: var(--text-color); 
+ }
+ 
+ header ul li a{
+     text-decoration: none;
+     color: var(--title-second-color);
+ }
+ 
+ .nav-items{
+     width: 100%;
+     display: flex;
+     font-family: 'Poppins', sans-serif; 
+ }
+ 
+ .nav-item{
+     display: inline-block;
+     list-style: none;
+     margin: 0 2 rem; 
+     padding: 1rem;
+     text-decoration: none;
+ 
+ }
+ 
+ .nav-logo{
+     height: 30%;
+     margin-top: -2rem; 
+ }
