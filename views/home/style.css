@@ -180,3 +180,247 @@ body{
 
 
 
+html {
+    scroll-behavior: smooth;
+    
+}
+
+#navbar {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   position: fixed; 
+   top: 0; 
+   left: 0; 
+   color: var(--title-second-color);
+   transition: 1s; 
+   width: 100%;
+   font-size: 1.2rem;
+   z-index: 100; 
+   cursor: pointer;
+   font-weight: 400; 
+
+}
+
+#navbar.rolagem {
+    background-color: #fff;
+    color: var(--text-color); 
+    position: fixed; 
+    font-size: 1.25rem; 
+}
+
+#navbar.rolagem a{
+    color: var(--text-color); 
+}
+
+
+#navbar ul li a{
+    text-decoration: none;
+    color: var(--title-second-color);
+   
+}
+
+
+.navbar__logo{
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    padding-left: 3rem;
+
+
+}
+.navbar__items{
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    width: 100%;
+    display: flex;
+    font-family: 'Poppins', sans-serif; 
+    padding-left: 3rem;
+    padding-right: 3rem; 
+}
+
+.navbar__item{
+    display: inline-block;
+    list-style: none;
+    margin: 0 3rem; 
+    padding: 0rem;
+    text-decoration: none;
+
+}
+
+.navbar__logo img{
+    display: block;
+    width: 12.5rem; 
+    margin-top: -2.15rem; 
+
+}
+
+
+body{
+  width: 100%;
+  min-height: 100vh;  
+}
+
+
+.videobackground{
+    width: 100%;
+    height: 100vh;
+
+}
+
+.videobackground video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.sustainable-message h2{ 
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 750;
+    font-size: 3rem; 
+    align-items: center;
+    background-image: url("../assets/img/Imagem3.jpg");
+    background-position: cov;
+    padding: 6rem; 
+    text-align: center;
+    background-repeat: no-repeat;
+    color: var(--title-second-color);
+    letter-spacing: 1.5px;
+
+ }
+ 
+
+
+.energysection--left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 12%;
+    text-align: left;
+
+}
+
+.energysection--right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0% 12%;
+    text-align: right;
+
+}
+
+.energysection img{
+    width: 35rem;
+    height: 23rem;
+    object-fit: cover;
+    border-radius: 60px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+
+.energysection h2{
+    font-size: 2.8rem;
+    font-family: 'League Spartan', sans-serif;
+    color: var(--title-primary-color); 
+}
+
+.energysection p{
+    font-size: 1.8rem; 
+    font-family: 'Poppins', sans-serif;
+    padding: 1rem 0rem;
+}
+
+.energysection button{
+
+    border-width: 5px;
+    border-style: solid;
+    border-color: var(--action-color);
+    font-size: 2rem;
+    color: var(--title-primary-color);
+    background-color: #fff;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 700;
+    padding: 0.8rem;
+    transition: all 1s cubic-bezier(.23, 1, 0.32, 1);
+    border-radius: 100px;
+    cursor: pointer;
+    
+
+}
+
+.energysection button:hover{
+    border-color: #108023;
+    color: var(--title-second-color);
+    background-color: #108023;
+    transform: translateY(-2px);
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+}
+
+
+.energysection button:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.section--cleantech{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0% 12%;
+    text-align: right;
+
+}
+
+.section--cleantech img{
+    width: 35rem;
+    height: 23rem;
+    object-fit:cover;
+    border-radius: 60px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    justify-content:center;
+    align-items: center;
+    margin: 2rem;
+    
+}
+
+.energysection button:active{
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+.section--cleantech button:hover{
+    border-color: #108023;
+    color: var(--title-second-color);
+    background-color: #108023;
+    transform: translateY(-2px);
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+}
+
+.section--cleantech button {
+    border-width: 5px;
+    border-style: solid;
+    border-color: var(--action-color);
+    font-size: 2rem;
+    color: var(--title-primary-color);
+    background-color: #fff;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 700;
+    padding: 0.8rem;
+    transition: all 1s cubic-bezier(.23, 1, 0.32, 1);
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.section--cleantech p{
+    font-size: 1.8rem; 
+    font-family: 'Poppins', sans-serif;
+    padding: 1rem 0rem;
+}
+
+.section--cleantech h2{
+    font-size: 2.8rem;
+    font-family: 'League Spartan', sans-serif;
+    color: var(--title-primary-color); 
+}

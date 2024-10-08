@@ -1,81 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Hope</title>
-    <link rel="stylesheet" href = ../styles/global.css>
-    <link rel="stylesheet" href = style.css>
-    <link rel="icon" href="../assets/img/IconProjetoHope.png" type="image/x-icon"> 
+    <link rel="stylesheet" href=../styles/global.css>
+    <link rel="stylesheet" href=style.css>
+    <link rel="icon" href="../assets/img/IconProjetoHope.png" type="image/x-icon">
 </head>
 
 <body>
 
     <header id="navbar" class="navbar">
         <div class="navbar__logo">
-        <a href = index.html> 
-            <img src="../assets/img/LogoProjetoHope8.png" alt="Logo do Projeto"/> 
-        </a>
+            <a href=index.html>
+                <img src="../assets/img/LogoProjetoHope8.png" alt="Logo do Projeto" />
+            </a>
         </div>
         <nav>
             <ul class="navbar__items">
-                <li class="navbar__item"><a href="index.html">início</a></li>
-                <li class="navbar__item"><a href="../energiasolar/index.html">energias renováveis</a></li>
-                <li class="navbar__item"><a href="../about/index.html">sobre nós</a></li>
+                <li class="navbar__item"><a href="index.html">Início</a></li>
+                <li class="navbar__item"><a href="#energias">Energias renováveis</a></li>
+                <li class="navbar__item"><a href="#nos">Sobre nós</a></li>
             </ul>
         </nav>
     </header>
 
     <section>
 
-            <div class="videobackground">
-                <video src="../assets/videos/VideoBackground.mp4" autoplay muted loop></video>
-            </div>
+        <div class="videobackground">
+            <video src="../assets/videos/VideoBackground.mp4" autoplay muted loop></video>
+        </div>
     </section>
-   
+
 
 
     <section>
         <div class="sustainable-message">
-            <h2>a energia renovável é o caminho para um mundo mais <br> verde e sustentável</h2>
+            <h2>A energia renovável é o caminho para um mundo mais <br> verde e sustentável</h2>
         </div>
 
     </section>
 
     <section>
-        <div class="energysection">
+        <div class="energysection" id="energias">
             <div class="energysection--left">
-                <div> <img src="../assets/img/Imagem1.jpg"/></div>
+                <div> <img src="../assets/img/Imagem1.jpg" /></div>
                 <div>
-                    <h2>transforme seu futuro com energia solar</h2>
+                    <h2>Transforme seu futuro com energia solar</h2>
                     <p>Descubra como você pode economizar e contribuir para um planeta mais sustentável.</p>
-                    <button>saiba mais</button>
+                    <button href="../about/index.html">Saiba mais</button>
                 </div>
 
             </div>
 
             <div class="energysection--right">
                 <div>
-                    <h2>ventos que movem o futuro, explore sobre energia eólica</h2>
+                    <h2>Ventos que movem o futuro, explore sobre energia eólica</h2>
                     <p>Descubra como você pode economizar e contribuir para um planeta mais sustentável.</p>
-                    <button>saiba mais</button>
+                    <button>Saiba mais</button>
                 </div>
-                <div> <img src="../assets/img/Imagem2.jpg"/></div>
+                <div> <img src="../assets/img/Imagem2.jpg" /></div>
 
             </div>
 
             <div class="energysection--left">
-                <div> <img src="../assets/img/Imagem4.jpg"/></div>
+                <div> <img src="../assets/img/Imagem4.jpg" /></div>
                 <div>
-                    <h2>energia hidrelétrica: a força renovável das águas</h2>
+                    <h2>Energia hidrelétrica: A força renovável das águas</h2>
                     <p>Descubra como você pode economizar e contribuir para um planeta mais sustentável.</p>
-                    <button>saiba mais</button>
+                    <button>Saiba mais</button>
                 </div>
-
             </div>
+
+            <div>
+
+    </section>
+
+    <section>
+        <div class="section--cleantech" id="nos">
+            <div>
+                <h2>Entenda sobre a <br> Clean Tech</h2>
+                <p>Descubra sobre nossas ideias e tentativas de ajudar o mundo.</p>
+                <button>Sobre nós</button>
+            </div>
+            <div> <img src="../assets/img/resol-logo.png"></div>
+
         </div>
+    </div>
     </section>
 
     <script src="script.js"></script>
 </body>
+
 </html>
