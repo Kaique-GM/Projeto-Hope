@@ -14,8 +14,8 @@
 ::selection{
     background-color: #108023;
     color: var(--title-second-color);
-}
 
+}
 
 * {
     margin: 0; 
