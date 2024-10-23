@@ -8,19 +8,28 @@
     <link rel="stylesheet" href = style.css>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" href="../assets/img/IconProjetoHope.png" type="image/x-icon"> 
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-straight/css/uicons-regular-straight.css'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 <body>
     <header id="navbar" class="navbar">
         <div class="navbar__logo">
-        <a href = index.html> 
+        <a href = ../home/index.html> 
             <img src="../assets/img/LogoProjetoHope8.png" alt="Logo do Projeto"/> 
         </a>
         </div>
         <nav>
             <ul class="navbar__items">
-                <li class="navbar__item"><a href="index.html">início</a></li>
-                <li class="navbar__item"><a href="../energiasolar/index.html">energias renováveis</a></li>
+                <li class="navbar__item"><a href="../home/index.html">início</a></li>
+                <li class="navbar__item dropdown">
+                    <a href="#">energias renováveis</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../energiasolar/index.html">energia solar</a></li>
+                        <li><a href="../energiahidroeletrica/index.html">energia hidroelétrica</a></li>
+                        <li><a href="../energiaeolica/index.html">energia eólica</a></li>
+                    </ul>
+                </li>
                 <li class="navbar__item"><a href="../about/index.html">sobre nós</a></li>
             </ul>
         </nav>
@@ -40,161 +49,156 @@
         </div>
     </section>
 
+
     <section>
         <div class="firstbackground">
         </div>
     </section>
-    
+
+
     <section>
-        <div class="esolar-funcionamento">
-            <div class="esolar-funcionamento__background">
-                
-                <div class="esolar-funcionamento__video">
-                    <iframe src="https://www.youtube.com/embed/xKxrkht7CpY" 
-                    title="How do solar panels work? - Richard Komp" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            
-                </div>
-                <div class="esolar-funcionamento__description">
-                    <h2>como funciona a energia solar?</h2>
-                    <p>Confira o vídeo explicativo ao lado e aprenda mais sobre o tema.</p>
+        <div class="esolar-beneficios__title">
+            <h2>benefícios da energia solar</h2>
+        </div>
+
+        <div class="esolar-beneficios__container">
+
+            <div class="esolar-beneficios__card" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                <div class="esolar-beneficios__box">
+                    <div class="esolar-beneficios__content">
+
+                        <div class="esolar-beneficios__icon">
+                            <i class="fi fi-rs-solar-panel"></i>
+                        </div>
+                        <span>01</span>
+                        <h2>energia renovável e sustentável</h2>
+                        <p> A energia solar é uma fonte inesgotável, 
+                            já que o sol é uma fonte de energia natural e abundante, renovando-se diariamente.</p>
+                    </div>
                 </div>
             </div>
+
+            <div class="esolar-beneficios__card" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">
+                <div class="esolar-beneficios__box">
+                    <div class="esolar-beneficios__content">
+                        <div class="esolar-beneficios__icon">
+                            <i class="fi fi-rs-bolt"></i>
+                        </div>
+                        <span>02</span>
+                        <h2>redução de custos energéticos</h2>
+                        <p> Com a instalação de painéis solares, os consumidores podem gerar sua própria eletricidade, 
+                            diminuindo significativamente as contas de luz a longo prazo.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="esolar-beneficios__card" data-aos="fade-up" data-aos-duration="3000" data-aos-once="true">
+                <div class="esolar-beneficios__box">
+                    <div class="esolar-beneficios__content">
+                        <div class="esolar-beneficios__icon">
+                            <i class="fi fi-rs-solar-panel-sun"></i>
+                        </div>
+                        <span>03</span>
+                        <h2>compatível com outras tecnologias</h2>
+                        <p> A energia solar pode ser combinada com baterias para armazenar eletricidade, 
+                            garantindo fornecimento contínuo, mesmo em dias nublados ou à noite.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="esolar-beneficios__card" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                <div class="esolar-beneficios__box">
+                    <div class="esolar-beneficios__content">
+                       <div class="esolar-beneficios__icon"><i class="fi fi-rs-usd-circle"></i></div>
+                        <span> 04
+                        </span>
+                        <h2>valorização de propriedade</h2>
+                        <p> Imóveis com sistemas de energia solar geralmente têm maior valor de mercado, 
+                            pois oferecem economia de longo prazo em energia e são vistos como mais sustentáveis.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="esolar-beneficios__card" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">
+                <div class="esolar-beneficios__box">
+                    <div class="esolar-beneficios__content">
+                        <div class="esolar-beneficios__icon"><i class="fi fi-rs-bio-leaves"></i></div>
+                        <span>05</span>
+                        <h2>baixo impacto ambiental</h2>
+                        <p> A instalação de painéis solares tem um impacto ambiental mínimo em comparação com outras 
+                            fontes de energia como a hidrelétrica ou a 
+                            termoelétrica.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="esolar-beneficios__card" data-aos="fade-up" data-aos-duration="3000" data-aos-once="true">
+                <div class="esolar-beneficios__box">
+                    <div class="esolar-beneficios__content">
+                        <div class="esolar-beneficios__icon"><i class="fi fi fi-rs-settings"></i></div>
+                        <span>06</span>
+                        <h2>baixa manutenção</h2>
+                        <p> Os sistemas solares exigem pouca manutenção. Uma vez instalados, 
+                            os painéis solares duram em média 25-30 anos, necessitando apenas 
+                            de limpeza periódica.</p>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
-    
+
     <section>
         <div class="secondbackground">
         </div>
     </section>
 
     <section>
-        <div class="esolar-beneficios__container">
-            <h2>benefícios da energia solar</h2>
-            <div class="esolar-beneficios__accordion">
-                
-                <div class="esolar-beneficios__accordion-header">
-                    <button>
-
-                        
-                        <span><img src="../assets/img/icon1.png"></img>energia limpa e renovável</span>
-                        <i class="fa-solid fa-chevron-down arrow"></i>
-                    </button>
-                </div>
-    
-                <div class="esolar-beneficios__accordion-body">
-                    <p>Lorem, ipsum dolor sit amet consectetur
-                        adipisicing elit. Rem corrupti voluptatem
-                        enim facilis maxime, et iure magnam suscipit
-                        consequatur nemo provident dolores temporibus
-                        praesentium nisi quae unde nostrum
-                        commodi sit.</p>
-                </div> 
-
-            </div> 
-            <div class="esolar-beneficios__accordion">
-                <div class="esolar-beneficios__accordion-header">
-                    <button>
-                        <span> 
-                            <img src="../assets/img/icon2.png"></img>
-                            redução de custos energéticos
-                        </span>
-                        <i class="fa-solid fa-chevron-down arrow"></i>
-                    </button>
-                </div>
-                <div class="esolar-beneficios__accordion-body">
-                    <p>Lorem, ipsum dolor sit amet consectetur
-                        adipisicing elit. Rem corrupti voluptatem
-                        enim facilis maxime, et iure magnam suscipit
-                        consequatur nemo provident dolores temporibus
-                        praesentium nisi quae unde nostrum
-                        commodi sit.</p>
-                </div> 
-                
-            </div> 
-
-            <div class="esolar-beneficios__accordion">
-                <div class="esolar-beneficios__accordion-header">
-                    <button>
-                            <span><img src="../assets/img/icon4.png"></img>
-                                baixa manutenção
-                            </span>       
-                            <i class="fa-solid fa-chevron-down arrow"></i>
-                      
-                    </button>
-                </div>
-                <div class="esolar-beneficios__accordion-body">
-                    <p>Lorem, ipsum dolor sit amet consectetur
-                        adipisicing elit. Rem corrupti voluptatem
-                        enim facilis maxime, et iure magnam suscipit
-                        consequatur nemo provident dolores temporibus
-                        praesentium nisi quae unde nostrum
-                        commodi sit.</p>
-                </div> 
-            </div> 
-
-            <div class="esolar-beneficios__accordion">
-                <div class="esolar-beneficios__accordion-header" id="last_accordion">
-                    <button>
-                        <span>
-                            <img src="../assets/img/icon6.png"></img>
-                            independência energética
-                        </span>
-                        <i class="fa-solid fa-chevron-down arrow"></i>
-                    </button>
-                </div>
-                <div class="esolar-beneficios__accordion-body">
-                    <p>Lorem, ipsum dolor sit amet consectetur
-                        adipisicing elit. Rem corrupti voluptatem
-                        enim facilis maxime, et iure magnam suscipit
-                        consequatur nemo provident dolores temporibus
-                        praesentium nisi quae unde nostrum
-                        commodi sit.</p>
-                </div> 
-            </div> 
-            
-             
-        </div>
-    </section>
-
-    <section>
         <div class="forminvestimento"> 
             <div class="forminvestimento__background">
-                <div class="forminvestimento__description">
+                <div class="forminvestimento__description" data-aos="fade-right" data-aos-duration="500" data-aos-once="true">
                     <h2>simular investimento em energia solar</h2>
                     <p>Preencha o formulário ao lado e descubra quantas placas serão necessárias para suprir seu gasto energético. </p>
                 </div>
 
-                <div class="forminvestimento__form">
+                <div class="forminvestimento__form" data-aos="fade-left" data-aos-duration="500" data-aos-once="true">
                     
                     <form>
                         <div class="forminvestimento__input-group">
                             <div class="forminvestimento__input-box group">
                                 <label>Potência da placa solar</label>
-                                <select id="potencia" required> 
-                                    <option selected disable value="" id="selecione">Selecione</option>
-                                    <option>305W</option>
-                                    <option>310W</option>
-                                    <option>320W</option>
-                                    <option>330W</option>
-                                    <option>340W</option>
-                                    <option>345W</option>
-                                    <option>350W</option>
-                                    <option>405W</option>
-                                    <option>435W</option>
-                                    <option>450W</option>
-                                    <option>500W</option>
-                                    <option>550W</option>
-                                </select>
-                                <div class="forminvestimento__select--icon">
-                                    <i class="fa-solid fa-cared-down"></i>
+                                <div class="forminvestimento__select-box">
+                                    <div class="forminvestimento__select-list">
+                                        <select id="potencia" class="forminvestimento__select" required>
+                                                <option value="" disabled selected>Selecione</option>
+                                                <option value="305">305W</option>
+                                                <option value="310">310W</option>
+                                                <option value="320">320W</option>
+                                                <option value="330">330W</option>
+                                                <option value="340">340W</option>
+                                                <option value="345">345W</option>
+                                                <option value="350">350W</option>
+                                                <option value="405">405W</option>
+                                                <option value="435">435W</option>
+                                                <option value="450">450W</option>
+                                                <option value="500">500W</option>
+                                                <option value="550">550W</option>
+                                        </select>
+                                    </div>
+                                    <div class="forminvestimento__select-icon">
+                                        <img src="http://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon" aria-hidden="true">
+                                    </div>
                                 </div>
-                            </div>
+                            </div>    
 
                             <div class="forminvestimento__input-box">
                                 <label>Consumo mensal da residência (em kWh/mês)</label>
                                 <input id="consumo" type="text" placeholder="Ex.: 200" required> 
                             </div>
                         </div>
-                        <div class="forminvestimento__button">
+                        <div class="forminvestimento__button" data-aos="zoom-in" data-aos-duration="1500" data-aos-once="true">
                             <button>calcular</button>
                         </div>
                     </form>
@@ -203,5 +207,137 @@
         </div>
     </section>
 
+    
+    <section>
+        <div class="esolar-duvidas__container">
+            <h2 data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">perguntas frequentes</h2>
+            
+            <div class="esolar-duvidas__accordion">
+                
+                <div class="esolar-duvidas__accordion-header">
+                    <button data-aos="fade-right" data-aos-duration="1500" data-aos-once="true">
+
+                        
+                        <span><img src="../assets/img/icon1.png"></img>
+                        é possível armazenar a energia gerada?
+                        </span>
+                        <i class="fa-solid fa-chevron-down arrow"></i>
+                    </button>
+                </div>
+    
+                <div class="esolar-duvidas__accordion-body">
+                    <p>Sim, com o uso de baterias, é possível armazenar o excesso de energia gerada 
+                        durante o dia para ser usada à noite ou em momentos de baixa produção solar.</p>
+                </div> 
+
+            </div> 
+
+            <div class="esolar-duvidas__accordion">
+                <div class="esolar-duvidas__accordion-header">
+                    <button data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
+                        <span> 
+                            <img src="../assets/img/icon2.png"></img>
+                            qual a vida útil dos painéis solares?
+                        </span>
+                        <i class="fa-solid fa-chevron-down arrow"></i>
+                    </button>
+                </div>
+                <div class="esolar-duvidas__accordion-body">
+                    <p>A maioria dos painéis solares tem uma vida útil de 25 a 30 anos. 
+                        No entanto, sua eficiência pode diminuir ligeiramente ao 
+                        longo do tempo, mas eles continuam a gerar eletricidade.</p>
+                </div> 
+                
+            </div> 
+
+            <div class="esolar-duvidas__accordion">
+                <div class="esolar-duvidas__accordion-header">
+                    <button data-aos="fade-right" data-aos-duration="2500" data-aos-once="true">
+                            <span><img src="../assets/img/icon4.png"></img>
+                                como funciona a manutenção dos painéis solares?
+                            </span>       
+                            <i class="fa-solid fa-chevron-down arrow"></i>
+                      
+                    </button>
+                </div>
+                <div class="esolar-duvidas__accordion-body">
+                    <p>Os painéis solares requerem pouca manutenção. Normalmente, 
+                        basta limpá-los algumas vezes por ano para remover poeira, folhas ou resíduos. 
+                        Inspeções periódicas para verificar conexões elétricas também são recomendadas.</p>
+                </div> 
+            </div> 
+
+            <div class="esolar-duvidas__accordion" id="last_accordion">
+                <div class="esolar-duvidas__accordion-header">
+                    <button data-aos="fade-right" data-aos-duration="3000" data-aos-once="true">
+                        <span>
+                            <img src="../assets/img/icon6.png"></img>
+                            o que acontece com o excesso de energia gerada?
+                        </span>
+                        <i class="fa-solid fa-chevron-down arrow"></i>
+                    </button>
+                </div>
+                <div class="esolar-duvidas__accordion-body">
+                    <p>Se o sistema gerar mais energia do que o consumido, o excesso pode ser injetado na rede elétrica (no caso de sistemas conectados à rede) e você pode ]
+                        receber créditos na conta de luz, ou ser armazenado em baterias para uso futuro.</p>
+                </div> 
+            </div> 
+            
+             
+        </div>
+    </section>
+
+    <section>
+        <div class="thirdbackground">
+        </div>
+    </section>
+
+    <section>
+
+        
+        <div class="esolar-funcionamento">
+            
+
+            <div class="esolar-funcionamento__background">
+                
+                <div class="esolar-funcionamento__video" data-aos="zoom-in" data-aos-duration="1500" data-aos-once="true">
+                    <iframe src="https://www.youtube.com/embed/xKxrkht7CpY?cc_load_policy=1&cc_lang_pref=pt-BR" 
+                    title="How do solar panels work? - Richard Komp" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            
+                </div>
+                <div class="esolar-funcionamento__description" data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">
+                    <h2>como funciona a energia solar?</h2>
+                    <p>Confira o vídeo explicativo ao lado e aprenda mais sobre o tema.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    
+    <footer> 
+        <div class="footer">   
+            <ul class="footer__items">
+                <li class="footer__item"><a href="../home/index.html">início</a></li>
+                <li class="footer__item">
+                    <a href="#">energias renováveis</a>
+                </li>
+                <li class="footer__item"><a href="../about/index.html">sobre nós</a></li>
+            </ul>
+            <div class="footer__logo">
+                <p>2024  &copy;  Projeto Hope</p>
+            </div>
+        </div>
+
+        
+    </footer>
+    
+    
+    
 </body>
+
+<script src="script.js"> </script>  
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
 </html>

@@ -1,4 +1,4 @@
-#navbar {
+.navbar {
    display: flex;
    align-items: center;
    justify-content: space-between;
@@ -15,23 +15,87 @@
 
 }
 
-#navbar.rolagem {
+.navbar.rolagem {
     background-color: #fff;
     color: var(--text-color); 
     position: fixed; 
     font-size: 1.25rem; 
+    box-shadow: rgba(50, 50, 93, 0.15) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
 }
 
-#navbar.rolagem a{
+.navbar.rolagem a{
     color: var(--text-color); 
 }
 
+.navbar__items{
+    position: relative;
+     padding-top: 3rem;
+     padding-bottom: 2rem;
+     width: 100%;
+     display: flex;
+     font-family: 'Poppins', sans-serif; 
+     padding-left: 3rem;
+     padding-right: 3rem; 
+      
+ }
+ 
+ .navbar__item{
+     display: inline-block;
+     list-style: none;
+     margin: 0 3rem; 
+     padding: 0rem;
+     text-decoration: none;
 
-#navbar ul li a{
-    text-decoration: none;
-    color: var(--title-second-color);
-   
+ }
+
+ .navbar__item a{
+  text-decoration: none;
+  color: #fff; 
+  position: relative; 
+ 
 }
+
+ .navbar ul li a::before{
+  content: ' '; 
+  position: absolute; 
+  bottom: -2px; 
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  transform: scaleX(0); 
+  transition: transform 0.5s ease-in-out;
+  transform-origin: right;
+  
+ 
+}
+
+.navbar ul li a::before{
+    content: ' '; 
+    position: absolute; 
+    bottom: -2px; 
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+    transform: scaleX(0); 
+    transition: transform 0.5s ease-in-out;
+    transform-origin: right;
+    
+   
+  }
+ 
+  .navbar.rolagem ul li a::before{
+    background-color: #000;
+   
+  }
+
+
+.navbar ul li a:hover::before{
+  transform: scaleX(1); 
+  transform-origin: left;
+ 
+}
+
 
 
 .navbar__logo{
@@ -41,24 +105,7 @@
 
 
 }
-.navbar__items{
-    padding-top: 3rem;
-    padding-bottom: 2rem;
-    width: 100%;
-    display: flex;
-    font-family: 'Poppins', sans-serif; 
-    padding-left: 3rem;
-    padding-right: 3rem; 
-}
 
-.navbar__item{
-    display: inline-block;
-    list-style: none;
-    margin: 0 3rem; 
-    padding: 0rem;
-    text-decoration: none;
-
-}
 
 .navbar__logo img{
     display: block;
@@ -67,6 +114,54 @@
 
 }
 
+
+.dropdown {
+    position: relative;
+  }
+  
+  .dropdown-menu li a::before {
+    display: none; 
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    z-index: 100;
+    min-width: 200px; 
+    border-radius: 10px; 
+    box-shadow: rgba(50, 50, 93, 0.15) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+  
+  }
+  
+  .dropdown-menu li {
+    display: block;
+    padding: 0;
+  }
+  
+  .dropdown-menu li a {
+    color: var(--text-color);
+    text-decoration: none;
+    display: block;
+    padding: 1rem;
+    white-space: nowrap;
+  }
+  
+  .dropdown-menu li a:hover {
+    background-color: #47a884; 
+    border-radius: 10px; 
+  }
+  
+  .dropdown:hover .dropdown-menu,
+  .dropdown-menu:hover {
+    display: block;
+  }
 
 body{
   width: 100%;
@@ -78,6 +173,11 @@ body{
     width: 100%;
     height: 100vh;
 
+}
+
+.videobackground button{
+    position: relative;
+    top: 20rem; 
 }
 
 .videobackground video {
@@ -175,6 +275,52 @@ body{
 .energysection button:active {
   box-shadow: none;
   transform: translateY(0);
+}
+
+.footer {
+    width: 100%;
+    background-color: #71451D;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    padding: 0 3rem;
+}
+
+.footer__logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer__items {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    list-style-type: none;
+    margin: 0 auto; 
+    padding: 3rem;
+}
+
+.footer__item {
+    padding: 0 3rem;
+}
+
+.footer__item a {
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer__item:hover {
+    transform: translateY(-3px);
+}
+
+.footer__logo p{
+  font-size: 1.2rem;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
 }
 
 
