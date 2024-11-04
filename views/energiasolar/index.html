@@ -198,8 +198,17 @@
                                 <input id="consumo" type="text" placeholder="Ex.: 200" required> 
                             </div>
                         </div>
+                        <!-- Lucas: onde aparece o resultado (teste) -->
+                         <div>
+                            <Strong><p id="textoResultado">Resultado: </p>
+                            <div id="resultado">---</div></Strong>
+                         </div>
+                        
                         <div class="forminvestimento__button" data-aos="zoom-in" data-aos-duration="1500" data-aos-once="true">
-                            <button>calcular</button>
+                            <!-- Lucas: coloque o type porque queria testar se ele parava de ataulizar a página -->
+                            <button type="button" onclick="preencherFormularioSimulacao(event)">calcular</button>
+                            <!-- <button type="button">calcular</button>  -->
+                            
                         </div>
                     </form>
                 </div>

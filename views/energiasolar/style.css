@@ -798,4 +798,16 @@
     object-fit: contain;
     background-attachment: fixed;
   }
+
+  #resultado{
+    font-size: 1,5rem; 
+    text-align: center;
+    font-family: 'Poppins', sans-serif; 
+  }
+
+  #textoResultado{
+    font-size: 1,5rem; 
+    text-align: center;
+    font-family: 'Poppins', sans-serif; 
+  }
   
