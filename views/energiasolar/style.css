@@ -1,3 +1,18 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.nav-link i {
+  color: #000000; /* Cor inicial do ícone */
+  font-size: 24px; /* Tamanho inicial */
+  transition: all 0.3s ease; /* Animação suave */
+}
+
+.nav-link:hover i {
+  color: var(--action-color); /* Cor ao passar o mouse */
+  font-size: 30px; /* Aumenta o tamanho */
+}
+
 .navbar {
     display: flex;
     align-items: center;
@@ -103,7 +118,7 @@
 .dropdown-menu {
   display: none;
   position: absolute;
-  top: 100%; 
+  top: 105%; 
   left: 0;
   background-color: #fff;
   padding: 0;
@@ -408,9 +423,9 @@
 
 
 .forminvestimento__button button:hover{ 
-    border-color: #71451D;
+    border-color: var(--action-color);
     color: var(--title-second-color);
-    background-color: #71451D;
+    background-color: var(--action-color);
     transform: translateY(-2px);
     box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
 }
