@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Hope</title>
-    <link rel="stylesheet" href = ../styles/global.css>
-    <link rel="stylesheet" href = style.css>
+    <link rel="stylesheet" href = views/styles/global.css>
+    <link rel="stylesheet" href = views/home/style.css>
     <link rel="icon" href="../assets/img/IconProjetoHope.png" type="image/x-icon"> 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
@@ -16,30 +16,31 @@
 
     <header id="navbar" class="navbar">
         <div class="navbar__logo">
-        <a href = index.html> 
-            <img src="../assets/img/LogoProjetoHope8.png" alt="Logo do Projeto"/> 
-        </a>
+            <a href=index.html>
+                <img src="views/assets/img/LogoProjetoHope8.png" alt="Logo do Projeto" />
+            </a>
         </div>
         <nav>
             <ul class="navbar__items">
-                <a class="nav-link" href="#"><i class="fas fa-home"></i></a>
+                <li class="navbar__item"><a href="../../index.html">início</a></li>
                 <li class="navbar__item dropdown">
-                    <a href="#energias">Energias renováveis</a>
+                    <a href="#">energias renováveis</a>
                     <ul class="dropdown-menu">
-                        <li><a href="../energiasolar/index.html">Energia solar</a></li>
-                        <li><a href="../energiahidrelétrica/index.html">Energia hidrelétrica</a></li>
-                        <li><a href="../energiaeolica/index.html">Energia eólica</a></li>
+                        <li><a href="views/energiasolar/index.html">energia solar</a></li>
+                        <li><a href="views/energiahidrelétrica/index.html">energia hidrelétrica</a></li>
+                        <li id="dropdown-eolica"><a href="../energiaeolica/index.html">energia eólica</a></li>
                     </ul>
                 </li>
-                <li class="navbar__item"><a href="https://linktr.ee/victorbrotto ">Quem somos</a></li>
+                <li class="navbar__item"><a href="https://linktr.ee/victorbrotto ">quem somos</a></li>
             </ul>
         </nav>
     </header>
 
+
     <section>
 
             <div class="videobackground">
-                <video src="../assets/videos/VideoBackground.mp4" autoplay muted loop></video>
+                <video src="views/assets/videos/VideoBackground.mp4" autoplay muted loop></video>
                 
             </div>
     </section>
@@ -48,7 +49,7 @@
 
     <section>
         <div class="sustainable-message">
-            <h2>A energia renovável é o caminho para um mundo mais <br> verde e sustentável</h2>
+            <h2>a energia renovável é o caminho para um mundo mais <br> verde e sustentável</h2>
         </div>
 
     </section>
@@ -56,31 +57,31 @@
     <section>
         <div class="energysection" id="energias">
             <div class="energysection--left">
-                <div data-aos="zoom-in" data-aos-duration="1500" data-aos-once="true"> <img src="../assets/img/Imagem1.jpg"/></div>
+                <div data-aos="zoom-in" data-aos-duration="1500" data-aos-once="true"> <img src="views/assets/img/Imagem1.jpg"/></div>
                 <div data-aos="fade-left" data-aos-duration="1500">
-                    <h2>Transforme seu futuro com energia solar</h2>
+                    <h2>transforme seu futuro com energia solar</h2>
                     <p>Descubra como você pode economizar e contribuir para um planeta mais sustentável.</p>
-                    <button onclick="window.location.href='../energiasolar/index.html'">Saiba mais</button>
+                    <button onclick="window.location.href='views/energiasolar/index.html'">saiba mais</button>
                 </div>
 
             </div>
 
             <div class="energysection--right">
                 <div data-aos="fade-right" data-aos-duration="1500" data-aos-once="true">
-                    <h2>Ventos que movem o futuro, explore sobre energia eólica</h2>
+                    <h2>ventos que movem o futuro, explore sobre energia eólica</h2>
                     <p>Descubra como você pode economizar e contribuir para um planeta mais sustentável.</p>
-                    <button>Saiba mais</button>
+                    <button>saiba mais</button>
                 </div>
-                <div data-aos="zoom-in" data-aos-duration="1500" data-aos-once="true"> <img src="../assets/img/Imagem2.jpg"/></div>
+                <div data-aos="zoom-in" data-aos-duration="1500" data-aos-once="true"> <img src="views/assets/img/Imagem2.jpg"/></div>
 
             </div>
 
             <div class="energysection--left">
-                <div data-aos="zoom-in" data-aos-duration="1500" data-aos-once="true"> <img src="../assets/img/Imagem4.jpg"/></div>
+                <div data-aos="zoom-in" data-aos-duration="1500" data-aos-once="true"> <img src="views/assets/img/Imagem4.jpg"/></div>
                 <div data-aos="fade-left" data-aos-duration="1500" data-aos-once="true">
-                    <h2>Energia hidrelétrica: a força renovável das águas</h2>
+                    <h2>energia hidrelétrica: a força renovável das águas</h2>
                     <p>Descubra como você pode economizar e contribuir para um planeta mais sustentável.</p>
-                    <button onclick="window.location.href='../energiahidrelétrica/index.html'">Saiba mais</button>
+                    <button onclick="window.location.href='../energiahidrelétrica/index.html'">saiba mais</button>
                 </div>
 
             </div>
@@ -90,11 +91,11 @@
     <footer> 
         <div class="footer">   
             <ul class="footer__items">
-                <li class="footer__item"><a href="#">Início</a></li>
+                <li class="footer__item"><a href="#">início</a></li>
                 <li class="footer__item">
-                    <a href="#energias">Energias renováveis</a>
+                    <a href="#energias">energias renováveis</a>
                 </li>
-                <li class="footer__item"><a href="https://linktr.ee/victorbrotto ">Quem somos</a></li>
+                <li class="footer__item"><a href="https://linktr.ee/victorbrotto ">quem somos</a></li>
             </ul>
             <div class="footer__logo">
                 <p>2024  &copy;  Projeto Hope</p>
@@ -102,7 +103,7 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="views/home/script.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
     AOS.init();
