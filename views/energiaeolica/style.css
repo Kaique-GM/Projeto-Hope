@@ -3,130 +3,136 @@ html {
 }
 
 .nav-link i {
-  color: #000000; /* Cor inicial do ícone */
-  font-size: 24px; /* Tamanho inicial */
-  transition: all 0.3s ease; /* Animação suave */
+  color: #000000;
+  /* Cor inicial do ícone */
+  font-size: 24px;
+  /* Tamanho inicial */
+  transition: all 0.3s ease;
+  /* Animação suave */
 }
 
 .nav-link:hover i {
-  color: var(--action-color); /* Cor ao passar o mouse */
-  font-size: 30px; /* Aumenta o tamanho */
+  color: var(--action-color);
+  /* Cor ao passar o mouse */
+  font-size: 30px;
+  /* Aumenta o tamanho */
 }
 
 .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: sticky; 
-    top: 0; 
-    left: 0; 
-    color: #0000; 
-    transition: 1s; 
-    width: 100%;
-    font-size: 1.2rem;
-    z-index: 100; 
-    cursor: pointer;
-    font-weight: 400; 
-    background-color: #fff;
- 
- }
- 
- #navbar.rolagem {
-     background-color: #fff;
-     position: fixed; 
-     font-size: 1.25rem; 
-     box-shadow: rgba(50, 50, 93, 0.15) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
- }
- 
- #navbar.rolagem a{
-    color: var(--text-color); 
-    text-decoration: none;
- }
- 
- 
- .navbar__logo{
-     padding-top: 3rem;
-     padding-bottom: 2rem;
-     padding-left: 3rem;
- 
- 
- }
- .navbar__items{
-    position: relative;
-     padding-top: 3rem;
-     padding-bottom: 2rem;
-     width: 100%;
-     display: flex;
-     font-family: 'Poppins', sans-serif; 
-     padding-left: 3rem;
-     padding-right: 3rem; 
- }
- 
- .navbar__item{
-     display: inline-block;
-     list-style: none;
-     margin: 0 3rem; 
-     padding: 0rem;
-     text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  left: 0;
+  color: #0000;
+  transition: 1s;
+  width: 100%;
+  font-size: 1.2rem;
+  z-index: 100;
+  cursor: pointer;
+  font-weight: 400;
+  background-color: #fff;
 
- }
-
- .navbar__item a{
-  text-decoration: none;
-  color: var(--text-color); 
-  position: relative; 
- 
 }
 
- .navbar ul li a::before{
-  content: ' '; 
-  position: absolute; 
-  bottom: -2px; 
+#navbar.rolagem {
+  background-color: #fff;
+  position: fixed;
+  font-size: 1.25rem;
+  box-shadow: rgba(50, 50, 93, 0.15) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+#navbar.rolagem a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+
+.navbar__logo {
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  padding-left: 3rem;
+
+
+}
+
+.navbar__items {
+  position: relative;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  width: 100%;
+  display: flex;
+  font-family: 'Poppins', sans-serif;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.navbar__item {
+  display: inline-block;
+  list-style: none;
+  margin: 0 3rem;
+  padding: 0rem;
+  text-decoration: none;
+
+}
+
+.navbar__item a {
+  text-decoration: none;
+  color: var(--text-color);
+  position: relative;
+
+}
+
+.navbar ul li a::before {
+  content: ' ';
+  position: absolute;
+  bottom: -2px;
   width: 100%;
   height: 2px;
   background-color: #000;
-  transform: scaleX(0); 
+  transform: scaleX(0);
   transition: transform 0.5s ease-in-out;
   transform-origin: right;
-  
- 
-}
- 
 
-.navbar ul li a:hover::before{
-  transform: scaleX(1); 
+
+}
+
+
+.navbar ul li a:hover::before {
+  transform: scaleX(1);
   transform-origin: left;
- 
+
 }
 
 
- .navbar__logo img{
-     display: block;
-     width: 12.5rem; 
-     margin-top: -2.15rem; 
- 
- }
- 
- .dropdown {
+.navbar__logo img {
+  display: block;
+  width: 12.5rem;
+  margin-top: -2.15rem;
+
+}
+
+.dropdown {
   position: relative;
 }
 
 .dropdown-menu li a::before {
-  display: none; 
+  display: none;
 }
 
 .dropdown-menu {
   display: none;
   position: absolute;
-  top: 105%; 
+  top: 105%;
   left: 0;
   background-color: #fff;
   padding: 0;
   margin: 0;
   list-style: none;
   z-index: 100;
-  min-width: 200px; 
-  border-radius: 10px; 
+  min-width: 200px;
+  border-radius: 10px;
   transition: 1s;
   box-shadow: rgba(50, 50, 93, 0.15) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 
@@ -138,7 +144,7 @@ html {
 }
 
 .dropdown-menu li a {
-  
+
   text-decoration: none;
   display: block;
   padding: 1rem;
@@ -146,7 +152,7 @@ html {
 }
 
 .dropdown-menu li a:hover {
-  color: #fff; 
+  color: #fff;
   background-color: #47a884;
   border-radius: 10px;
 }
@@ -155,674 +161,396 @@ html {
 .dropdown-menu:hover {
   display: block;
 }
- 
- body{
-   width: 100%;
-   min-height: 100vh;  
- }
- 
- 
 
- .esolar-motivo{
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    padding: 4rem;
-    
- }
-
- .esolar-background{
-    width: 80%;
-    padding: 4rem;
-    color: var(--title-second-color); 
-    background: rgb(150,196,199);
-    background: linear-gradient(103deg, rgba(150,196,199,1) 18%, rgba(99,178,156,1) 65%, rgba(48,160,113,1) 100%);
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    border-radius: 100px; 
-    
- }
- 
- .esolar-motivo__description{ 
-    width: 52%;
- }
-
- .esolar-motivo h2{
-    font-family: 'League Spartan', sans-serif;
-    font-size: 3.2rem;
- }
-
- .esolar-motivo p{
-    font-family: 'Poppins', sans-serif;
-    font-size: 2.2rem; 
- }
-
- .esolar-motivo img{
-    width: 20rem;
-    height: 23rem;
- }
-
-
-
-.firstbackground{
-    width: 100%; 
-    height: 12rem;
-    background-image: url(../assets/img/Imagem5.jpg); 
-    object-fit: cover;
-    background-size: cover;
-    background-position: top center; 
-    object-fit: contain;
-    background-attachment: fixed;
+body {
+  width: 100%;
+  min-height: 100vh;
 }
 
 
-.esolar-funcionamento{
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    padding: 6rem;
-    
-    
-  
-}
+.esolar-funcionamento {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem;
 
-.esolar-funcionamento__background{
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    width: 80%; 
-    
-
-}
-
-.esolar-funcionamento__description{
-    padding: 0rem; 
-    width: 40%;
-
-}
-
-.esolar-funcionamento__description h2{
-    color: var(--bg-green); 
-    font-family: 'League Spartan', sans-serif;
-    font-size: 3rem; 
-
-}
-
-.esolar-funcionamento__description p{
-    font-size: 1.8rem; 
-    font-family: 'Poppins', sans-serif; 
-}
-
-
-
-.esolar-funcionamento__video{
-    width: 60%;
-}
-
-.esolar-funcionamento__video iframe{    
-   width: 95%;
-   height: 23rem;
-   
-}
-
-.secondbackground{
-    width: 100%; 
-    height: 12rem;
-    background-image: url(../assets/img/Imagem6.jpg); 
-    object-fit: cover;
-    background-size: cover;
-    background-position: top center; 
-    object-fit: contain;
-    background-attachment: fixed;
-}
-
-
-.forminvestimento{ 
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-}
-
-.forminvestimento__background{  
-    display: flex;
-    padding: 6rem 4rem;
-    margin: 2rem;
-    width: 80%;
-    border-radius: 60px; 
-    background-color: var(--bg-green); 
-    position:relative; 
-
-}
-
-.forminvestimento__description h2::selection{  
-    background-color: #47a884;
-    color: #000; 
-
-}
-
-.forminvestimento__description p::selection{  
-    background-color: #47a884;
-    color: #000; 
-
-}
-
-.forminvestimento__description{
-    color: white; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 50%;
-
-}
-
-.forminvestimento__description h2{
-    font-size: 3rem; 
-    font-family: 'League Spartan', sans-serif;
-    color: var(--title-second-color); 
-
-}
-
-.forminvestimento__description p{
-    font-size: 1.8rem; 
-    font-family: 'Poppins', sans-serif;
-    color: var(--title-second-color); 
-
-}
-
-.forminvestimento__form{
-    background-color: #ffffff; 
-    border-radius: 60px; 
-    display: flex;
-    position: absolute; 
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0rem 1rem;
-    right: 4rem; 
-    top: 4rem; 
-    width: 35%;
-    height: 105%;
-    color: #000; 
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-
-}
-
-.forminvestimento__input-group{
-    display: flex;
-    flex-direction: column;
-    font-family: 'Poppins', sans-serif;
-    
-}
-
-.forminvestimento__input-box{
-    display: flex;
-    padding: 0rem 1.5rem;
-    flex-direction: column;
-    
-}
-
-.forminvestimento__input-box input{ 
-    border: 1px solid #c7c7c7;
-    border-radius: 10px;
-    padding: 0.5rem 0.5rem;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.3rem;
-    color:#000;
 
 
 }
 
+.esolar-funcionamento__background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
 
-.forminvestimento__input-box input:hover{ 
-  border-color: #000; 
+
 }
 
-.forminvestimento__input-box label{ 
-    font-size: 1.3rem; 
-    
+.esolar-funcionamento__description {
+  padding: 0rem;
+  width: 40%;
+
+}
+
+.esolar-funcionamento__description h2 {
+  color: var(--bg-green);
+  font-family: 'League Spartan', sans-serif;
+  font-size: 3rem;
+
+}
+
+.esolar-funcionamento__description p {
+  font-size: 1.8rem;
+  font-family: 'Poppins', sans-serif;
 }
 
 
 
-.forminvestimento__input-box option{ 
-    font-family: 'Poppins', sans-serif;
-    border: 1px solid #c7c7c7;
-    z-index: 1;
+.esolar-funcionamento__video {
+  width: 60%;
+}
+
+.esolar-funcionamento__video iframe {
+  width: 95%;
+  height: 23rem;
+
+}
+
+.secondbackground {
+  width: 100%;
+  height: 12rem;
+  background-image: url(../assets/img/imagem10.jpeg);
+  object-fit: cover;
+  background-size: cover;
+  background-position: top center;
+  object-fit: contain;
+  background-attachment: fixed;
+}
+
+.esolar-duvidas__container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 0rem;
+
+}
+
+.esolar-duvidas__container h2 {
+  font-family: 'League Spartan', sans-serif;
+  font-size: 4rem;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  color: var(--title-primary-color);
+}
+
+.esolar-duvidas__accordion {
+  width: 75%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: column;
+  border-top: 1px solid #000;
+}
+
+.esolar-duvidas__accordion-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 2rem;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+}
+
+.esolar-duvidas__accordion-header img {
+  margin-right: 2rem;
+  margin-left: 0rem;
+
+}
+
+#last_accordion {
+  border-bottom: 1px solid #000;
+
+}
+
+
+.esolar-duvidas__accordion-header span {
+  font-size: 2.3rem;
+  padding: 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  color: #30A071;
+}
+
+.esolar-duvidas__accordion-header button {
+  font-size: 1rem;
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 800;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  padding: 1.5rem 0rem;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+}
+
+.esolar-duvidas__accordion-header button img {
+  width: 10%;
 
 }
 
 
 
-.forminvestimento__input-box input::placeholder{
-    color: #9e9e9e; 
+
+.esolar-duvidas__accordion-body {
+  font-size: 1.2rem;
+  opacity: 0;
+  width: 90%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  transition: opacity 1s;
+  height: 0;
+  overflow: hidden;
+
+
 }
 
 
-.forminvestimento__button { 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.esolar-duvidas__accordion-body p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.6rem;
+  padding: 2rem 0rem;
+
+
+
 }
 
-.forminvestimento__button button{ 
-    border-width: 5px;
-    border-style: solid;
-    border-color: var(--action-color);
-    font-size: 2.5rem;
-    color: var(--title-primary-color);
-    background-color: #fff;
-    font-family: 'League Spartan', sans-serif;
-    font-weight: 700;
-    padding: 1rem 5rem;
-    transition: all 1s cubic-bezier(.23, 1, 0.32, 1);
-    border-radius: 100px;
-    margin-top: 3rem;
-    cursor: pointer;
+.esolar-duvidas__accordion-body.active {
+  height: 100%;
+  opacity: 100%;
+
+}
+
+.arrow {
+  transition: transform .3s linear;
+}
+
+.esolar-duvidas__accordion:has(.active) .arrow {
+  transform: rotate(180deg);
 }
 
 
-.forminvestimento__button button:hover{ 
-    border-color: var(--action-color);
-    color: var(--title-second-color);
-    background-color: var(--action-color);
-    transform: translateY(-2px);
-    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+.esolar-beneficios__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5rem;
 }
 
-.forminvestimento__button button:active {
-    box-shadow: none;
-    transform: translateY(0);
-  }
 
-  
-  
 
-  .forminvestimento__select-box {
-    position: relative;
-    display: block;
-    width: 100%;
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    color: #60666d;
-  }
-  
-  .forminvestimento__select {
-    width: 100%;
-    padding: 15px;
-    border: 1px solid #c7c7c7;
-    border-radius: 10px;
-    margin-bottom: 1rem;
-    appearance: none;
-    background-color: #fff;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.3rem;
-    cursor: pointer;
-    color: #000;
-  }
-  
-  .forminvestimento__select-icon {
-    position: absolute;
-    top: 50%;
-    right: 15px;
-    transform: translateY(-50%);
-    width: 20px;
-    opacity: 0.3;
-    pointer-events: none;
-  }
-  
-  .forminvestimento__select:hover,
-  .forminvestimento__select:focus {
-    border-color: #070707;
-  }
-  
-  .forminvestimento__select option {
-    margin-bottom: 20rem;
-    padding: 15px;
-    background-color: #fff;
-    
-    font-family: 'Poppins', sans-serif;
-    color: #000;
-  }
+.esolar-beneficios__title h2 {
+  font-family: 'League Spartan', sans-serif;
+  color: var(--title-primary-color);
+  font-size: 4rem;
+
+}
+
+.esolar-beneficios__container {
+  padding: 4rem 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 
 
 
-  .esolar-duvidas__container{
-    display: flex;
-    flex-direction: column;
-    gap: 8px; 
-    justify-content: center;
-    align-items: center;
-    padding: 5rem 0rem;
-    
-  }
+}
 
-  .esolar-duvidas__container h2{
-    font-family: 'League Spartan', sans-serif;
-    font-size: 4rem; 
-    padding-top: 4rem;
-    padding-bottom: 2rem;
-    color: var(--title-primary-color);
-  }
-  .esolar-duvidas__accordion{
-    width: 75%;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    flex-direction: column;
-    border-top: 1px solid #000;
-  }
-
-  .esolar-duvidas__accordion-header{ 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0rem 2rem; 
-    width: 100%;
-    overflow: hidden;
-    text-overflow: ellipsis;
- 
-  }
-
-  .esolar-duvidas__accordion-header img{ 
-    margin-right: 3rem;
-    margin-left: 0rem;
- 
-  }
-
-  #last_accordion{
-    border-bottom: 1px solid #000;
-  
-  }
-
-  
-  .esolar-duvidas__accordion-header span{ 
-    font-size: 2.8rem;  
-    padding: 0rem; 
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    color: #30A071;
-  }
-
-  .esolar-duvidas__accordion-header button{
-    font-size: 1rem; 
-    font-family: 'League Spartan', sans-serif;
-    font-weight: 800;
-    background-color: transparent;
-    border: none;
-    cursor: pointer; 
-    display: flex;
-    padding:  1.5rem 0rem;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-
-  }
-
-  .esolar-duvidas__accordion-header button img{
-    width: 7%;
-    
-  }
-
-  
+.esolar-beneficios__card {
+  position: relative;
+  width: 25%;
+  height: 28rem;
+  margin-left: 3.5rem;
+  margin-right: 3.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  background-color: var(--action-color);
+}
 
 
-  .esolar-duvidas__accordion-body{
-    font-size: 1.2rem; 
-    opacity: 0;
-    width: 90%; 
-    justify-content: center;
-    display: flex; 
-    align-items: center;
-    transition: opacity 1s; 
-    height: 0;
-    overflow: hidden;    
+.esolar-beneficios__box {
+  width: 92%;
+  position: absolute;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  text-align: center;
+  transition: 0.2s;
+  height: 92%;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
 
 
-  }
+.esolar-beneficios__content h2 {
+  font-family: 'League Spartan', sans-serif;
+  color: var(--title-primary-color);
+  z-index: 10;
+  position: relative;
+  font-size: 2.5rem;
 
-
-  .esolar-duvidas__accordion-body p{
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.6rem; 
-    padding: 2rem 0rem; 
+}
 
 
 
-  }
+.esolar-beneficios__box p {
+  z-index: 10;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
 
-  .esolar-duvidas__accordion-body.active{
-    height: 100%;
-    opacity: 100%;
-    
-  }
+}
 
-  .arrow{
-    transition: transform .3s linear;
-  }
+.esolar-beneficios__box:hover {
+  transform: translateY(-50px);
+  background: rgb(81, 175, 149);
+  background: linear-gradient(106deg, rgba(81, 175, 149, 1) 33%, rgba(127, 197, 200, 1) 78%);
+  color: #fff;
 
-  .esolar-duvidas__accordion:has(.active) .arrow{
-    transform: rotate(180deg);
-  }
+}
 
+.esolar-beneficios__box:hover h2 {
+  color: #fff;
 
-  .esolar-beneficios__title{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 5rem; 
-  }
+}
 
-  
+.esolar-beneficios__box:hover p {
+  transition: 0s;
 
-  .esolar-beneficios__title h2{
-    font-family: 'League Spartan', sans-serif;
-    color: var(--title-primary-color); 
-    font-size: 4rem;
-  
-  }
-  .esolar-beneficios__container{
-    padding:4rem 4rem; 
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    flex-wrap: wrap;
-  
-    
+}
 
-  }
+.esolar-beneficios__content span {
+  font-family: 'League Spartan', sans-serif;
+  position: absolute;
+  font-size: 7rem;
+  top: 20px;
+  right: 30px;
+  font-weight: 800;
+  z-index: 0;
+  opacity: 50%;
+  color: transparent;
+  -webkit-text-stroke-color: #ccc;
+  -webkit-text-stroke-width: 2px;
 
-  .esolar-beneficios__card{
-    position: relative; 
-    width: 25%;
-    height: 28rem;
-    margin-left: 3.5rem;
-    margin-right: 3.5rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem; 
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    border-radius: 20px; 
-    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-    background-color: var(--action-color);
-  }
+}
 
-  
-  .esolar-beneficios__box{
-    width: 92%;
-    position: absolute;
-    border-radius: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0.5rem; 
-    text-align: center;
-    transition: 0.2s;
-    height: 92%;
-    background-color: #fff;
-    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-  }
+.esolar-beneficios__icon {
+  position: absolute;
+  left: 5%;
+  top: 5%;
+  background-color: var(--action-color);
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  height: 4rem;
+  text-align: center;
+}
 
+.fi-rs-bolt,
+.fi-rs-usd-circle,
+.fi-rs-shield,
+.fi-rs-wind,
+.fi-rs-gear,
+.fa-wind,
+.icone-leaf {
+  font-size: 2rem;
+  text-align: center;
+  color: #fff;
+}
 
+.fi {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-
-
-  .esolar-beneficios__content h2{ 
-    font-family: 'League Spartan', sans-serif;
-    color: var(--title-primary-color); 
-    z-index: 10;
-    position: relative;
-    font-size: 2.5rem;
-    
-  }
-
-
-
-  .esolar-beneficios__box p{
-    z-index: 10;
-    font-size: 1rem;
-    font-family: 'Poppins', sans-serif;
-    
-  }
-
-  .esolar-beneficios__box:hover{
-    transform: translateY(-50px); 
-    background: rgb(81,175,149);
-    background: linear-gradient(106deg, rgba(81,175,149,1) 33%, rgba(127,197,200,1) 78%);
-    color: #fff; 
-    
-  }
-
-  .esolar-beneficios__box:hover h2{
-    color: #fff;
-    
-  }
-
-  .esolar-beneficios__box:hover p{
-    transition: 0s;
-
-  }
-
-  .esolar-beneficios__content span{
-    font-family: 'League Spartan', sans-serif;
-    position: absolute; 
-    font-size: 7rem; 
-    top: 20px; 
-    right: 30px; 
-    font-weight: 800;
-    z-index: 0;
-    opacity: 50%;
-    color: transparent;  
-    -webkit-text-stroke-color: #ccc; 
-    -webkit-text-stroke-width: 2px; 
-
-  }
-
-  .esolar-beneficios__icon{
-    position: absolute; 
-    left: 5%; 
-    top: 5%; 
-    background-color: var(--action-color); 
-    width: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 100%;
-    height: 4rem;
-    text-align: center;
-  }
-
-
-  .fi-rs-solar-panel, .fi-rs-bolt, .fi-rs-leaf, .fi-rs-usd-circle, .fi-rs-solar-panel-sun, .fi-rs-bio-leaves, .fi-rs-settings{ 
-    font-size: 2rem;
-    text-align: center;
-    color: #fff;
-  }
-
-  .fi{
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .footer {
-    width: 100%;
-    background-color: #71451D;
-    height: 15rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    justify-content: center;
-    padding: 0 3rem;
+.footer {
+  width: 100%;
+  background-color: #71451D;
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 3rem;
 }
 
 .footer__logo {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .footer__items {
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    list-style-type: none;
-    margin: 0 auto; 
-    padding: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 3rem;
 }
 
 .footer__item {
-    padding: 0 3rem;
+  padding: 0 3rem;
 }
 
 .footer__item a {
-    font-size: 1.5rem;
-    font-family: 'Poppins', sans-serif;
-    color: #fff;
-    text-decoration: none;
+  font-size: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  text-decoration: none;
 }
 
 .footer__item:hover {
-    transform: translateY(-3px);
+  transform: translateY(-3px);
 }
 
-.footer__logo p{
+.footer__logo p {
   font-size: 1.2rem;
   font-family: 'Poppins', sans-serif;
   color: #fff;
 }
 
 
-
-
-
-
-
-  .thirdbackground{
-    width: 100%; 
-    height: 12rem;
-    background-image: url(../assets/img/Imagem7.jpg); 
-    object-fit: cover;
-    background-size: cover;
-    background-position: 90% 10%; 
-    object-fit: contain;
-    background-attachment: fixed;
-  }
-
-  #resultado{
-    font-size: 1,5rem; 
-    text-align: center;
-    font-family: 'Poppins', sans-serif; 
-  }
-
-  #textoResultado{
-    font-size: 1,5rem; 
-    text-align: center;
-    font-family: 'Poppins', sans-serif; 
-  }
-  
+.thirdbackground {
+  width: 100%;
+  height: 12rem;
+  background-image: url(../assets/img/Imagem11.jpeg);
+  object-fit: cover;
+  background-size: cover;
+  background-position: 90% 10%;
+  object-fit: contain;
+  background-attachment: fixed;
+}

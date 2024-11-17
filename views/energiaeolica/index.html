@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Energia Solar</title>
+    <title>Energia eólica</title>
     <link rel="stylesheet" href=../styles/global.css>
     <link rel="stylesheet" href=style.css>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -31,8 +31,8 @@
                 <li class="navbar__item dropdown">
                     <a href="#">Energias renováveis</a>
                     <ul class="dropdown-menu">
-                        <li><a href="../energiahidroeletrica/index.html">Energia hidroelétrica</a></li>
-                        <li><a href="../energiaeolica/index.html">Energia eólica</a></li>
+                        <li><a href="../energiasolar/">Energia solar</a></li>
+                        <li><a href="../energiahidrelétrica/index.html">Energia hidrelétrica</a></li>
                     </ul>
                 </li>
                 <li class="navbar__item"><a href="https://linktr.ee/victorbrotto ">Quem somos</a></li>
@@ -41,29 +41,8 @@
     </header>
 
     <section>
-        <div class="esolar-motivo">
-            <div class="esolar-background">
-                <div class="esolar-motivo__description">
-                    <h2>Por que escolher energia solar?</h2>
-                    <p>A energia solar é uma solução renovável que beneficia o meio ambiente e seu bolso.</p>
-                </div>
-                <div class="esolar-motivo__image">
-                    <img src="../assets/img/PainelSolar.png" />
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section>
-        <div class="firstbackground">
-        </div>
-    </section>
-
-
-    <section>
         <div class="esolar-beneficios__title">
-            <h2>Benefícios da energia solar</h2>
+            <h2>Benefícios da Energia Eólica</h2>
         </div>
 
         <div class="esolar-beneficios__container">
@@ -71,14 +50,13 @@
             <div class="esolar-beneficios__card" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
                 <div class="esolar-beneficios__box">
                     <div class="esolar-beneficios__content">
-
                         <div class="esolar-beneficios__icon">
-                            <i class="fi fi-rs-solar-panel"></i>
+                            <i class="fi fi-rs-wind"></i> <!-- Ícone relacionado ao vento -->
                         </div>
                         <span>01</span>
-                        <h2>Energia renovável e sustentável</h2>
-                        <p> A energia solar é uma fonte inesgotável,
-                            já que o sol é uma fonte de energia natural e abundante, renovando-se diariamente.</p>
+                        <h2>Fonte de Energia Renovável</h2>
+                        <p> Utiliza o vento, um recurso natural e inesgotável, para gerar eletricidade sem esgotá-lo.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -87,12 +65,12 @@
                 <div class="esolar-beneficios__box">
                     <div class="esolar-beneficios__content">
                         <div class="esolar-beneficios__icon">
-                            <i class="fi fi-rs-bolt"></i>
+                            <i class="fas fa-leaf icone-leaf"></i>
                         </div>
                         <span>02</span>
-                        <h2>Redução de custos energéticos</h2>
-                        <p> Com a instalação de painéis solares, os consumidores podem gerar sua própria eletricidade,
-                            diminuindo significativamente as contas de luz a longo prazo.</p>
+                        <h2>Baixas Emissões de Gases de Efeito Estufa</h2>
+                        <p> As usinas eólicas emitem praticamente nenhum poluente, ajudando a reduzir as emissões de
+                            gases de efeito estufa.</p>
                     </div>
                 </div>
             </div>
@@ -101,12 +79,12 @@
                 <div class="esolar-beneficios__box">
                     <div class="esolar-beneficios__content">
                         <div class="esolar-beneficios__icon">
-                            <i class="fi fi-rs-solar-panel-sun"></i>
+                            <i class="fi fi-rs-bolt"></i>
                         </div>
                         <span>03</span>
-                        <h2>Compatível com outras tecnologias</h2>
-                        <p> A energia solar pode ser combinada com baterias para armazenar eletricidade,
-                            garantindo fornecimento contínuo, mesmo em dias nublados ou à noite.</p>
+                        <h2>Capacidade de Geração Contínua</h2>
+                        <p>Usinas eólicas podem gerar energia continuamente, aproveitando a força do vento,
+                            principalmente em regiões com ventos constantes.</p>
                     </div>
                 </div>
             </div>
@@ -117,11 +95,9 @@
                         <div class="esolar-beneficios__icon"><i class="fi fi-rs-usd-circle"></i></div>
                         <span> 04
                         </span>
-                        <h2>Valorização de propriedade</h2>
-                        <p> Imóveis com sistemas de energia solar geralmente têm maior valor de mercado,
-                            pois oferecem economia de longo prazo em energia e são vistos como mais sustentáveis.
-
-                        </p>
+                        <h2>Despesas operacionais menores</h2>
+                        <p> Após a construção, os custos operacionais são relativamente baixos, pois o vento é gratuito
+                            e a manutenção das turbinas é simples.</p>
                     </div>
                 </div>
             </div>
@@ -129,12 +105,12 @@
             <div class="esolar-beneficios__card" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">
                 <div class="esolar-beneficios__box">
                     <div class="esolar-beneficios__content">
-                        <div class="esolar-beneficios__icon"><i class="fi fi-rs-bio-leaves"></i></div>
+                        <div class="esolar-beneficios__icon"><i class="fi fi-rs-shield"></i>
+                        </div>
                         <span>05</span>
-                        <h2>Baixo impacto ambiental</h2>
-                        <p> A instalação de painéis solares tem um impacto ambiental mínimo em comparação com outras
-                            fontes de energia como a hidrelétrica ou a
-                            termoelétrica.</p>
+                        <h2>Segurança Energética</h2>
+                        <p> A energia eólica assegura uma geração contínua de eletricidade, contribuindo para a
+                            estabilidade energética de um país, desde que haja ventos suficientes.</p>
                     </div>
                 </div>
             </div>
@@ -142,12 +118,11 @@
             <div class="esolar-beneficios__card" data-aos="fade-up" data-aos-duration="3000" data-aos-once="true">
                 <div class="esolar-beneficios__box">
                     <div class="esolar-beneficios__content">
-                        <div class="esolar-beneficios__icon"><i class="fi fi fi-rs-settings"></i></div>
+                        <div class="esolar-beneficios__icon"><i class="fa fa fa-wind"></i></div>
                         <span>06</span>
-                        <h2>Baixa manutenção</h2>
-                        <p> Os sistemas solares exigem pouca manutenção. Uma vez instalados,
-                            os painéis solares duram em média 25-30 anos, necessitando apenas
-                            de limpeza periódica.</p>
+                        <h2>Baixo Impacto Ambiental</h2>
+                        <p> Muitas usinas eólicas podem ser construídas em áreas pouco afetadas pela urbanização, como
+                            regiões rurais ou offshore, minimizando o impacto ambiental.</p>
                     </div>
                 </div>
             </div>
@@ -161,74 +136,6 @@
     </section>
 
     <section>
-        <div class="forminvestimento">
-            <div class="forminvestimento__background">
-                <div class="forminvestimento__description" data-aos="fade-right" data-aos-duration="500"
-                    data-aos-once="true">
-                    <h2>Simular investimento em energia solar</h2>
-                    <p>Preencha o formulário ao lado e descubra quantas placas serão necessárias para suprir seu gasto
-                        energético. </p>
-                </div>
-
-                <div class="forminvestimento__form" data-aos="fade-left" data-aos-duration="500" data-aos-once="true">
-
-                    <form>
-                        <div class="forminvestimento__input-group">
-                            <div class="forminvestimento__input-box group">
-                                <label>Potência da placa solar</label>
-                                <div class="forminvestimento__select-box">
-                                    <div class="forminvestimento__select-list">
-                                        <select id="potencia" class="forminvestimento__select" required>
-                                            <option value="" disabled selected>Selecione</option>
-                                            <option value="305">305W</option>
-                                            <option value="310">310W</option>
-                                            <option value="320">320W</option>
-                                            <option value="330">330W</option>
-                                            <option value="340">340W</option>
-                                            <option value="345">345W</option>
-                                            <option value="350">350W</option>
-                                            <option value="405">405W</option>
-                                            <option value="435">435W</option>
-                                            <option value="450">450W</option>
-                                            <option value="500">500W</option>
-                                            <option value="550">550W</option>
-                                        </select>
-                                    </div>
-                                    <div class="forminvestimento__select-icon">
-                                        <img src="http://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon"
-                                            aria-hidden="true">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="forminvestimento__input-box">
-                                <label>Consumo mensal da residência (em kWh/mês)</label>
-                                <input id="consumo" type="text" placeholder="Ex.: 200" required>
-                            </div>
-                        </div>
-                        <!-- Lucas: onde aparece o resultado (teste) -->
-                        <div>
-                            <Strong>
-                                <p id="textoResultado">Resultado: </p>
-                                <div id="resultado">---</div>
-                            </Strong>
-                        </div>
-
-                        <div class="forminvestimento__button" data-aos="zoom-in" data-aos-duration="1500"
-                            data-aos-once="true">
-                            <!-- Lucas: coloque o type porque queria testar se ele parava de ataulizar a página -->
-                            <button type="button" onclick="preencherFormularioSimulacao(event)">Calcular</button>
-                            <!-- <button type="button">calcular</button>  -->
-
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section>
         <div class="esolar-duvidas__container">
             <h2 data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">Perguntas frequentes</h2>
 
@@ -236,18 +143,18 @@
 
                 <div class="esolar-duvidas__accordion-header">
                     <button data-aos="fade-right" data-aos-duration="1500" data-aos-once="true">
-
-
-                        <span><img src="../assets/img/icon1.png"></img>
-                            É possível armazenar a energia gerada?
+                        <span><img src="../assets/img/eolicaIcon2.png"></img>
+                            Como a energia eólica é gerada?
                         </span>
                         <i class="fa-solid fa-chevron-down arrow"></i>
                     </button>
                 </div>
 
                 <div class="esolar-duvidas__accordion-body">
-                    <p>Sim, com o uso de baterias, é possível armazenar o excesso de energia gerada
-                        durante o dia para ser usada à noite ou em momentos de baixa produção solar.</p>
+                    <p>A energia eólica é gerada a partir do movimento do ar. Quando o vento passa pelas turbinas
+                        eólicas, as pás dessas turbinas começam a girar. Esse movimento faz com que a energia cinética
+                        do vento seja transformada em energia mecânica pelas turbinas e, por meio de geradores, em
+                        eletricidade.</p>
                 </div>
 
             </div>
@@ -256,16 +163,17 @@
                 <div class="esolar-duvidas__accordion-header">
                     <button data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
                         <span>
-                            <img src="../assets/img/icon2.png"></img>
-                            Qual a vida útil dos painéis solares?
+                            <img src="../assets/img/eolicaIcon1.png"></img>
+                            Se não houver vento, a turbina para de gerar energia?
                         </span>
                         <i class="fa-solid fa-chevron-down arrow"></i>
                     </button>
                 </div>
                 <div class="esolar-duvidas__accordion-body">
-                    <p>A maioria dos painéis solares tem uma vida útil de 25 a 30 anos.
-                        No entanto, sua eficiência pode diminuir ligeiramente ao
-                        longo do tempo, mas eles continuam a gerar eletricidade.</p>
+                    <p>Sim, a geração de energia eólica depende da presença de vento. Sem vento suficiente, as turbinas
+                        eólicas não conseguem capturar energia do ar para transformá-la em eletricidade. No entanto, o
+                        sistema pode ser complementado por outras fontes de geração, como energia solar ou hidráulica,
+                        para manter a estabilidade do sistema elétrico.</p>
                 </div>
 
             </div>
@@ -273,17 +181,19 @@
             <div class="esolar-duvidas__accordion">
                 <div class="esolar-duvidas__accordion-header">
                     <button data-aos="fade-right" data-aos-duration="2500" data-aos-once="true">
-                        <span><img src="../assets/img/icon4.png"></img>
-                            Como funciona a manutenção dos painéis solares?
+                        <span><img src="../assets/img/eolicaIcon3.png"></img>
+                            Por que o Brasil utiliza tanto a energia eólica?
                         </span>
                         <i class="fa-solid fa-chevron-down arrow"></i>
 
                     </button>
                 </div>
                 <div class="esolar-duvidas__accordion-body">
-                    <p>Os painéis solares requerem pouca manutenção. Normalmente,
-                        basta limpá-los algumas vezes por ano para remover poeira, folhas ou resíduos.
-                        Inspeções periódicas para verificar conexões elétricas também são recomendadas.</p>
+                    <p>O Brasil possui vastas áreas com ventos constantes e recursos naturais favoráveis para a
+                        instalação de turbinas eólicas. Essa fonte de energia é renovável, limpa e sustentável,
+                        contribuindo significativamente para a matriz energética brasileira. Além disso, é uma
+                        alternativa que reduz a dependência de fontes fósseis e promove a diversificação da matriz
+                        energética.</p>
                 </div>
             </div>
 
@@ -291,19 +201,20 @@
                 <div class="esolar-duvidas__accordion-header">
                     <button data-aos="fade-right" data-aos-duration="3000" data-aos-once="true">
                         <span>
-                            <img src="../assets/img/icon6.png"></img>
-                            O que acontece com o excesso de energia gerada?
+                            <img src="../assets/img/eolicaIcon4.png"></img>
+                            É seguro viver perto de parques eólicos?
                         </span>
                         <i class="fa-solid fa-chevron-down arrow"></i>
                     </button>
                 </div>
                 <div class="esolar-duvidas__accordion-body">
-                    <p>Se o sistema gerar mais energia do que o consumido, o excesso pode ser injetado na rede elétrica
-                        (no caso de sistemas conectados à rede) e você pode
-                        receber créditos na conta de luz, ou ser armazenado em baterias para uso futuro.</p>
+                    <p>Sim, os parques eólicos são construídos com rigorosos padrões de segurança para minimizar
+                        impactos à saúde e ao meio ambiente. As turbinas eólicas são projetadas para operar de forma
+                        segura e eficiente, e os parques eólicos são geralmente instalados em áreas rurais com baixo
+                        risco para a população. Além disso, estudos demonstram que as turbinas eólicas não representam
+                        perigo significativo para a saúde ou segurança.</p>
                 </div>
             </div>
-
 
         </div>
     </section>
@@ -323,14 +234,14 @@
 
                 <div class="esolar-funcionamento__video" data-aos="zoom-in" data-aos-duration="1500"
                     data-aos-once="true">
-                    <iframe src="https://www.youtube.com/embed/xKxrkht7CpY?cc_load_policy=1&cc_lang_pref=pt-BR"
-                        title="How do solar panels work? - Richard Komp" frameborder="0"
+                    <iframe src="https://www.youtube.com/embed/xy9nj94xvKA?cc_load_policy=1&cc_lang_pref=pt-BR"
+                        title="How do wind turbines work? - Rebecca J. Barthelmie and Sara C. Pryor" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
                 <div class="esolar-funcionamento__description" data-aos="fade-left" data-aos-duration="2000"
                     data-aos-once="true">
-                    <h2>Como funciona a energia solar?</h2>
+                    <h2>Como funciona a energia eólica?</h2>
                     <p>Confira o vídeo explicativo ao lado e aprenda mais sobre o tema.</p>
                 </div>
             </div>
@@ -340,7 +251,7 @@
 
 
     <footer>
-        <div class="footer">   
+        <div class="footer">
             <ul class="footer__items">
                 <li class="footer__item"><a href="../home/index.html">Início</a></li>
                 <li class="footer__item">
@@ -349,7 +260,7 @@
                 <li class="footer__item"><a href="https://linktr.ee/victorbrotto ">Quem somos</a></li>
             </ul>
             <div class="footer__logo">
-                <p>2024  &copy;  Projeto Hope</p>
+                <p>2024 &copy; Projeto Hope</p>
             </div>
         </div>
 
