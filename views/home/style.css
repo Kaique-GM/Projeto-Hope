@@ -1,6 +1,17 @@
 html {
   scroll-behavior: smooth;
 }
+.nav-link i {
+  color: #000000; /* Cor inicial do ícone */
+  font-size: 24px; /* Tamanho inicial */
+  transition: all 0.3s ease; /* Animação suave */
+}
+
+.nav-link:hover i {
+  color: var(--action-color); /* Cor ao passar o mouse */
+  font-size: 30px; /* Aumenta o tamanho */
+}
+
 
 .navbar {
    display: flex;

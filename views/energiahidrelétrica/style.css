@@ -1,0 +1,556 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.nav-link i {
+  color: #000000;
+  /* Cor inicial do ícone */
+  font-size: 24px;
+  /* Tamanho inicial */
+  transition: all 0.3s ease;
+  /* Animação suave */
+}
+
+.nav-link:hover i {
+  color: var(--action-color);
+  /* Cor ao passar o mouse */
+  font-size: 30px;
+  /* Aumenta o tamanho */
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  left: 0;
+  color: #0000;
+  transition: 1s;
+  width: 100%;
+  font-size: 1.2rem;
+  z-index: 100;
+  cursor: pointer;
+  font-weight: 400;
+  background-color: #fff;
+
+}
+
+#navbar.rolagem {
+  background-color: #fff;
+  position: fixed;
+  font-size: 1.25rem;
+  box-shadow: rgba(50, 50, 93, 0.15) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+#navbar.rolagem a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+
+.navbar__logo {
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  padding-left: 3rem;
+
+
+}
+
+.navbar__items {
+  position: relative;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  width: 100%;
+  display: flex;
+  font-family: 'Poppins', sans-serif;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.navbar__item {
+  display: inline-block;
+  list-style: none;
+  margin: 0 3rem;
+  padding: 0rem;
+  text-decoration: none;
+
+}
+
+.navbar__item a {
+  text-decoration: none;
+  color: var(--text-color);
+  position: relative;
+
+}
+
+.navbar ul li a::before {
+  content: ' ';
+  position: absolute;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  transform: scaleX(0);
+  transition: transform 0.5s ease-in-out;
+  transform-origin: right;
+
+
+}
+
+
+.navbar ul li a:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+
+}
+
+
+.navbar__logo img {
+  display: block;
+  width: 12.5rem;
+  margin-top: -2.15rem;
+
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu li a::before {
+  display: none;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 105%;
+  left: 0;
+  background-color: #fff;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  z-index: 100;
+  min-width: 200px;
+  border-radius: 10px;
+  transition: 1s;
+  box-shadow: rgba(50, 50, 93, 0.15) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+}
+
+.dropdown-menu li {
+  display: block;
+  padding: 0;
+}
+
+.dropdown-menu li a {
+
+  text-decoration: none;
+  display: block;
+  padding: 1rem;
+  white-space: nowrap;
+}
+
+.dropdown-menu li a:hover {
+  color: #fff;
+  background-color: #47a884;
+  border-radius: 10px;
+}
+
+.dropdown:hover .dropdown-menu,
+.dropdown-menu:hover {
+  display: block;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+}
+
+
+.esolar-funcionamento {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem;
+
+
+
+}
+
+.esolar-funcionamento__background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+
+
+}
+
+.esolar-funcionamento__description {
+  padding: 0rem;
+  width: 40%;
+
+}
+
+.esolar-funcionamento__description h2 {
+  color: var(--bg-green);
+  font-family: 'League Spartan', sans-serif;
+  font-size: 3rem;
+
+}
+
+.esolar-funcionamento__description p {
+  font-size: 1.8rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+.esolar-funcionamento__video {
+  width: 60%;
+}
+
+.esolar-funcionamento__video iframe {
+  width: 95%;
+  height: 23rem;
+
+}
+
+.secondbackground {
+  width: 100%;
+  height: 12rem;
+  background-image: url(../assets/img/Imagem8.jpeg);
+  object-fit: cover;
+  background-size: cover;
+  background-position: top center;
+  object-fit: contain;
+  background-attachment: fixed;
+}
+
+.esolar-duvidas__container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 0rem;
+
+}
+
+.esolar-duvidas__container h2 {
+  font-family: 'League Spartan', sans-serif;
+  font-size: 4rem;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  color: var(--title-primary-color);
+}
+
+.esolar-duvidas__accordion {
+  width: 75%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: column;
+  border-top: 1px solid #000;
+}
+
+.esolar-duvidas__accordion-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 2rem;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+}
+
+.esolar-duvidas__accordion-header img {
+  margin-right: 3rem;
+  margin-left: 0rem;
+
+}
+
+#last_accordion {
+  border-bottom: 1px solid #000;
+
+}
+
+
+.esolar-duvidas__accordion-header span {
+  font-size: 2.5rem;
+  padding: 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  color: #30A071;
+}
+
+.esolar-duvidas__accordion-header button {
+  font-size: 1rem;
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 800;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  padding: 1.5rem 0rem;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+}
+
+.esolar-duvidas__accordion-header button img {
+  width: 10%;
+
+}
+
+
+
+
+.esolar-duvidas__accordion-body {
+  font-size: 1.2rem;
+  opacity: 0;
+  width: 90%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  transition: opacity 1s;
+  height: 0;
+  overflow: hidden;
+
+
+}
+
+
+.esolar-duvidas__accordion-body p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.6rem;
+  padding: 2rem 0rem;
+
+
+
+}
+
+.esolar-duvidas__accordion-body.active {
+  height: 100%;
+  opacity: 100%;
+
+}
+
+.arrow {
+  transition: transform .3s linear;
+}
+
+.esolar-duvidas__accordion:has(.active) .arrow {
+  transform: rotate(180deg);
+}
+
+
+.esolar-beneficios__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5rem;
+}
+
+
+
+.esolar-beneficios__title h2 {
+  font-family: 'League Spartan', sans-serif;
+  color: var(--title-primary-color);
+  font-size: 4rem;
+
+}
+
+.esolar-beneficios__container {
+  padding: 4rem 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+
+
+}
+
+.esolar-beneficios__card {
+  position: relative;
+  width: 25%;
+  height: 28rem;
+  margin-left: 3.5rem;
+  margin-right: 3.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  background-color: var(--action-color);
+}
+
+
+.esolar-beneficios__box {
+  width: 92%;
+  position: absolute;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  text-align: center;
+  transition: 0.2s;
+  height: 92%;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+
+.esolar-beneficios__content h2 {
+  font-family: 'League Spartan', sans-serif;
+  color: var(--title-primary-color);
+  z-index: 10;
+  position: relative;
+  font-size: 2.5rem;
+
+}
+
+
+
+.esolar-beneficios__box p {
+  z-index: 10;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+.esolar-beneficios__box:hover {
+  transform: translateY(-50px);
+  background: rgb(81, 175, 149);
+  background: linear-gradient(106deg, rgba(81, 175, 149, 1) 33%, rgba(127, 197, 200, 1) 78%);
+  color: #fff;
+
+}
+
+.esolar-beneficios__box:hover h2 {
+  color: #fff;
+
+}
+
+.esolar-beneficios__box:hover p {
+  transition: 0s;
+
+}
+
+.esolar-beneficios__content span {
+  font-family: 'League Spartan', sans-serif;
+  position: absolute;
+  font-size: 7rem;
+  top: 20px;
+  right: 30px;
+  font-weight: 800;
+  z-index: 0;
+  opacity: 50%;
+  color: transparent;
+  -webkit-text-stroke-color: #ccc;
+  -webkit-text-stroke-width: 2px;
+
+}
+
+.esolar-beneficios__icon {
+  position: absolute;
+  left: 5%;
+  top: 5%;
+  background-color: var(--action-color);
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  height: 4rem;
+  text-align: center;
+}
+
+.fi-rs-bolt,
+.fi-rs-leaf,
+.fi-rs-usd-circle,
+.fi-rs-water,
+.fi-rs-shield,
+.fi-rs-settings,
+.icone-leaf {
+  font-size: 2rem;
+  text-align: center;
+  color: #fff;
+}
+
+.fi {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  width: 100%;
+  background-color: #71451D;
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 3rem;
+}
+
+.footer__logo {
+  display: flex;
+  align-items: center;
+}
+
+.footer__items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 3rem;
+}
+
+.footer__item {
+  padding: 0 3rem;
+}
+
+.footer__item a {
+  font-size: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer__item:hover {
+  transform: translateY(-3px);
+}
+
+.footer__logo p {
+  font-size: 1.2rem;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+}
+
+
+.thirdbackground {
+  width: 100%;
+  height: 12rem;
+  background-image: url(../assets/img/Imagem9.jpeg);
+  object-fit: cover;
+  background-size: cover;
+  background-position: 90% 10%;
+  object-fit: contain;
+  background-attachment: fixed;
+}
