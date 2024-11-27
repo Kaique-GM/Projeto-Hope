@@ -14,35 +14,60 @@
 
 <body>
 
-    <header id="navbar" class="navbar">
-        <div class="navbar__logo">
-            <a href=index.html>
-                <img src="views/assets/img/LogoProjetoHope8.png" alt="Logo do Projeto" />
-            </a>
-        </div>
-        <nav>
-            <ul class="navbar__items">
-                <li class="navbar__item"><a href=#>início</a></li>
-                <li class="navbar__item dropdown">
-                    <a href="#">energias renováveis</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="views/energiasolar/index.html">energia solar</a></li>
-                        <li><a href="views/energiahidrelétrica/index.html">energia hidrelétrica</a></li>
-                        <li id="dropdown-eolica"><a href="views/energiaeolica/index.html">energia eólica</a></li>
+    <header>
+        <div class="navbar" id="navbar">
+            <div class="navbar__logo">
+                <a href=index.html>
+                    <img src="views/assets/img/LogoProjetoHope8.png" alt="Logo do Projeto" />
+                </a>
+            </div>
+                <nav>
+                    <ul class="navbar__items">
+                        <li class="navbar__item"><a href=#>início</a></li>
+                        <li class="navbar__item dropdown">
+                            <a href="#">energias renováveis</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="views/energiasolar/index.html">energia solar</a></li>
+                                <li><a href="views/energiahidrelétrica/index.html">energia hidrelétrica</a></li>
+                                <li id="dropdown-eolica"><a href="views/energiaeolica/index.html">energia eólica</a></li>
+                            </ul>
+                        </li>
+                        <li class="navbar__item"><a href="https://linktr.ee/victorbrotto ">quem somos</a></li>
                     </ul>
-                </li>
-                <li class="navbar__item"><a href="https://linktr.ee/victorbrotto ">quem somos</a></li>
-            </ul>
-        </nav>
+                                  
+                    <div class="navbar__menu-icon">
+                        <button onclick="menuShow()"><i class="fa-solid fa-bars"></i></button>
+                    </div> 
+
+            
+            </nav>
+        
+        </div>
+           
+            <div class="navbar__mobile">
+                <ul class="navbar__items">
+                    <li class="navbar__item"><a href=#>início</a></li>
+                    <li class="navbar__item dropdown">
+                        <a href="#">energias renováveis</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="views/energiasolar/index.html">energia solar</a></li>
+                            <li><a href="views/energiahidrelétrica/index.html">energia hidrelétrica</a></li>
+                            <li id="dropdown-eolica"><a href="views/energiaeolica/index.html">energia eólica</a></li>
+                        </ul>
+                    </li>
+                    <li class="navbar__item"><a href="https://linktr.ee/victorbrotto ">quem somos</a></li>
+                </ul>
+            </div>
+      
     </header>
 
 
     <section>
 
-            <div class="videobackground">
+           <div class="videobackground">
                 <video src="views/assets/videos/VideoBackground.mp4" autoplay muted loop></video>
                 
-            </div>
+            </div> 
     </section>
    
 
@@ -58,7 +83,7 @@
         <div class="energysection" id="energias">
             <div class="energysection--left">
                 <div data-aos="zoom-in" data-aos-duration="1500" data-aos-once="true"> <img src="views/assets/img/Imagem1.jpg"/></div>
-                <div data-aos="fade-left" data-aos-duration="1500">
+                <div data-aos="fade-left" data-aos-duration="1500" data-aos-once="true">
                     <h2>transforme seu futuro com energia solar</h2>
                     <p>Descubra como você pode economizar e contribuir para um planeta mais sustentável.</p>
                     <button onclick="window.location.href='views/energiasolar/index.html'">saiba mais</button>
@@ -105,6 +130,7 @@
 
     <script src="views/home/script.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="styles/global.js"></script>
     <script>
     AOS.init();
   </script>

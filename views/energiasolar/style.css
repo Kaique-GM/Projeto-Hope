@@ -1,46 +1,40 @@
+
 html {
   scroll-behavior: smooth;
 }
 
 .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: sticky; 
-    top: 0; 
-    left: 0; 
-    color: #0000; 
-    transition: 1s; 
-    width: 100%;
-    font-size: 1.2rem;
-    z-index: 100; 
-    cursor: pointer;
-    font-weight: 400; 
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   position: fixed; 
+   top: 0; 
+   left: 0; 
+   transition: 1s; 
+   width: 100vw; 
+   font-size: 1.2rem;
+   z-index: 100; 
+   cursor: pointer;
+   font-weight: 400; 
+   background-color: #fff;
+  
+
+}
+
+.navbar.rolagem {
     background-color: #fff;
- 
- }
- 
- #navbar.rolagem {
-     background-color: #fff;
-     position: fixed; 
-     font-size: 1.25rem; 
-     box-shadow: rgba(50, 50, 93, 0.15) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
- }
- 
- #navbar.rolagem a{
     color: var(--text-color); 
-    text-decoration: none;
- }
- 
- 
- .navbar__logo{
-     padding-top: 3rem;
-     padding-bottom: 2rem;
-     padding-left: 3rem;
- 
- 
- }
- .navbar__items{
+    position: fixed; 
+    font-size: 1.25rem; 
+    box-shadow: rgba(50, 50, 93, 0.15) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+}
+
+.navbar.rolagem a{
+    color: var(--text-color); 
+}
+
+.navbar__items{
     position: relative;
      padding-top: 3rem;
      padding-bottom: 2rem;
@@ -49,6 +43,8 @@ html {
      font-family: 'Poppins', sans-serif; 
      padding-left: 3rem;
      padding-right: 3rem; 
+
+      
  }
  
  .navbar__item{
@@ -62,7 +58,7 @@ html {
 
  .navbar__item a{
   text-decoration: none;
-  color: var(--text-color); 
+  color: #000;
   position: relative; 
  
 }
@@ -73,14 +69,33 @@ html {
   bottom: -2px; 
   width: 100%;
   height: 2px;
-  background-color: #000;
+  background-color: #ffffff;
   transform: scaleX(0); 
   transition: transform 0.5s ease-in-out;
   transform-origin: right;
   
  
 }
+
+.navbar ul li a::before{
+    content: ' '; 
+    position: absolute; 
+    bottom: -2px; 
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+    transform: scaleX(0); 
+    transition: transform 0.5s ease-in-out;
+    transform-origin: right;
+    
+   
+  }
  
+  .navbar.rolagem ul li a::before{
+    background-color: #000;
+   
+  }
+
 
 .navbar ul li a:hover::before{
   transform: scaleX(1); 
@@ -89,14 +104,26 @@ html {
 }
 
 
- .navbar__logo img{
-     display: block;
-     width: 12.5rem; 
-     margin-top: -2.15rem; 
- 
- }
- 
- .dropdown {
+
+.navbar__logo{
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    padding-left: 3rem;
+
+
+}
+
+
+.navbar__logo img{
+    display: block;
+    max-width: 12.5rem;
+    width: 100%;
+    margin-top: -2.15rem; 
+
+}
+
+
+.dropdown {
   position: relative;
 }
 
@@ -150,18 +177,91 @@ html {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;  
 }
- body{
-   width: 100%;
-   min-height: 100vh;  
- }
- 
- 
 
+.navbar__menu-icon{
+  display: none;
+  
+}
+.navbar__mobile{
+  display: none;
+  flex-direction: column;
+  text-align: center;
+  position: absolute;
+  top: 100%; /* Fica logo abaixo do navbar */
+  left: 0;
+  width: 100%; /* O menu ocupa toda a largura */
+}
+
+
+
+ @media screen and (max-width: 880px){
+  
+  .nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.navbar.rolagem button{
+    color: var(--text-color); 
+  }
+
+  .navbar__items{
+    display: none;
+  }
+
+  .navbar__items a{
+    color: #000; 
+  }
+  .navbar__menu-icon{
+
+    display: block;
+    padding: 2rem 2rem; 
+    height: 100%;
+    line-height: 1;
+
+  }
+
+
+  .navbar__menu-icon button{
+    background-color: transparent; 
+    cursor: pointer; 
+    border: none; 
+    color: #000;  
+    font-size: 2rem; 
+  }
+
+  .navbar__logo{
+    padding: 2rem 1rem; 
+    margin-top: 1rem; 
+  }
+  .navbar__logo img{
+    width: 90%; 
+    padding: 0rem 0rem; 
+  }
+
+  .navbar__mobile ul{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 1rem; 
+   
+  }
+  .navbar__mobile .navbar__item{
+    display: none;
+    padding-top: 1.2rem; 
+  }
+
+  .open{
+    display: block;
+  }
+}
  .esolar-motivo{
     display: flex;
     justify-content: center;
     align-items: center; 
     padding: 4rem;
+    margin-top: 10rem; 
     
  }
 
@@ -193,11 +293,37 @@ html {
  }
 
  .esolar-motivo img{
-    width: 20rem;
+    width: 100%;
     height: 23rem;
  }
 
+ @media screen and (max-width: 730px){
 
+ }
+
+@media screen and (max-width: 480px) {
+
+.esolar-motivo{
+  padding: 2rem; 
+  margin-top: 5rem; 
+}
+
+  .esolar-motivo img{
+    width: 100%;
+    height: 10rem;
+ }
+  .esolar-background{
+    width: 100rem; 
+
+  }
+  .esolar-motivo h2{
+    font-size: 2rem; 
+  }
+
+  .esolar-motivo p{
+    font-size: 1rem; 
+  }
+}
 
 .firstbackground{
     width: 100%; 
@@ -276,6 +402,10 @@ html {
     display: flex;
     align-items: center;
     justify-content: center; 
+}
+
+.forminvestimento__content{
+
 }
 
 .forminvestimento__background{  
@@ -386,7 +516,15 @@ html {
 
 }
 
+.forminvestimento__input-box input[type="number"]::-webkit-inner-spin-button, 
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
 
+.forminvestimento__input-box input[type="number"] {
+    -moz-appearance: textfield;
+}
 
 .forminvestimento__input-box input::placeholder{
     color: #9e9e9e; 
@@ -478,9 +616,63 @@ html {
     font-family: 'Poppins', sans-serif;
     color: #000;
   }
+  .forminvestimento__resultado {
+    text-align: center;
+    margin-top: 2rem;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+}
+.forminvestimento__resultado h2 {
+    font-size: 2.5rem;
+    color: var(--title-primary-color);
+}
+.forminvestimento__resultado p {
+    font-size: 1.5rem;
+    color: var(--title-second-color);
+}
 
+.forminvestimento__voltar {
+  position: absolute;
+  top: 5px;
+  left: 20px;
+  padding: 13px 20px;
+  font-size: 1.2rem;
+  z-index: 10;
+  border-width: 5px;
+  border-style: solid;
+  border-color: var(--action-color);
+  color: var(--title-primary-color);
+  background-color: #fff;
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 700;
+  transition: all 1s cubic-bezier(.23, 1, 0.32, 1);
+  border-radius: 100px;
+  margin-top: 3rem;
+  cursor: pointer;
+}
 
+.forminvestimento__voltar:hover {
+  border-color: var(--action-color);
+  color: var(--title-second-color);
+  background-color: var(--action-color);
+  transform: translateY(-2px);
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+}
 
+.forminvestimento__voltar:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+  #erroMensagem{
+    display: none;
+    text-align: center;
+    color: red;
+    justify-content: center; 
+    align-items: center; 
+    font-size: 1.2rem; 
+    font-family: 'Poppins', sans-serif; 
+}
   .esolar-duvidas__container{
     display: flex;
     flex-direction: column;
@@ -513,7 +705,7 @@ html {
     justify-content: space-between;
     padding: 0rem 2rem; 
     width: 100%;
-    overflow: hidden;
+
     text-overflow: ellipsis;
  
   }
@@ -537,6 +729,11 @@ html {
     align-items: center;
     justify-content: left;
     color: #30A071;
+    text-wrap: nowrap;
+    overflow: hidden; /* Garante que o texto não transborde */
+    text-overflow: ellipsis; /* Adiciona elipses ao final do texto */
+    flex: 1; /* O span ocupa o espaço disponível */
+    min-width: 0; /* Garante que funcione com o overflow */
   }
 
   .esolar-duvidas__accordion-header button{
@@ -552,12 +749,16 @@ html {
     align-items: center;
     justify-content: space-between;
     max-width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    overflow: hidden; /* Esconde o texto que ultrapassa */
+    text-overflow: ellipsis; /* Adiciona elipses para indicar que o texto está cortado */
+    white-space: nowrap; /* Mantém o texto em uma única linha */
 
   }
-
+  .esolar-duvidas__accordion-header button.opened {
+    white-space: normal; /* Permite que o texto quebre em várias linhas */
+    overflow: visible; /* Mostra o texto completo */
+    text-overflow: unset; /* Remove as elipses */
+  }
   .esolar-duvidas__accordion-header button img{
     width: 7%;
     
@@ -591,7 +792,7 @@ html {
   }
 
   .esolar-duvidas__accordion-body.active{
-    height: 100%;
+    height: auto; 
     opacity: 100%;
     
   }
@@ -643,7 +844,7 @@ html {
     justify-content: center; 
     align-items: center; 
     border-radius: 20px; 
-    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(170, 122, 122, 0.24) 0px 1px 2px;
     background-color: var(--action-color);
   }
 
@@ -791,12 +992,6 @@ html {
   color: #fff;
 }
 
-
-
-
-
-
-
   .thirdbackground{
     width: 100%; 
     height: 12rem;
@@ -812,11 +1007,320 @@ html {
     font-size: 1,5rem; 
     text-align: center;
     font-family: 'Poppins', sans-serif; 
+    color: black; 
   }
 
   #textoResultado{
     font-size: 1,5rem; 
     text-align: center;
+    color: black; 
     font-family: 'Poppins', sans-serif; 
   }
   
+
+  .forminvestimento__resultado p{
+    color: black; 
+  }
+
+
+  /* Ajustes para telas menores que 1024px (tablets e pequenas telas) */
+@media screen and (max-width: 1300px) {
+  .esolar-background{
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+  .esolar-motivo__description{
+    width: 100%;
+    text-align: center;
+  }
+
+  .esolar-beneficios__container {
+    padding: 3rem 2rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .esolar-beneficios__card {
+    height: 25rem; 
+    width: 30%;
+    margin: 1.5rem 0;
+   
+  }
+
+  .esolar-beneficios__icon {
+    width: 15%;
+    height: 3.5rem;
+    top: 10px;
+    left: 10px;
+  }
+
+  .esolar-beneficios__content h2 {
+    font-size: 2rem;
+  }
+
+  .esolar-beneficios__content span {
+    font-size: 5rem;
+    top: 10px;
+    right: 20px;
+  }
+
+  .esolar-beneficios__box p {
+    font-size: 1rem;
+  }
+
+  .forminvestimento__button button{
+    padding: 1rem 2.5rem;
+    font-size: 2rem;  
+    margin-top: 2rem; 
+  }
+
+  .forminvestimento__resultado h2{
+    font-size: 1.8rem; 
+  }
+  .forminvestimento__resultado p{
+    font-size: 1.2rem; 
+  }
+
+ 
+}
+
+/* Ajustes para telas menores que 768px (smartphones) */
+@media screen and (max-width: 1030px) {
+  .esolar-beneficios__title h2 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .esolar-beneficios__container {
+    padding: 2rem 1rem;
+  }
+
+  .esolar-beneficios__card {
+    height: 25rem; 
+    width: 50%;
+    margin: 1rem 0;
+  }
+
+  .esolar-beneficios__box {
+    padding: 1rem;
+  }
+
+  .esolar-beneficios__icon {
+    width: 20%;
+    height: 4rem;
+  }
+
+  .esolar-beneficios__content span {
+    font-size: 4rem;
+  }
+
+  .esolar-beneficios__content h2 {
+    font-size: 2rem;
+  }
+
+  .esolar-beneficios__box p {
+    font-size: 1.1rem;
+  }
+
+  .forminvestimento__background{
+    width: 100%;
+    flex-direction: column;
+    position: inherit;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  
+  }
+
+  .forminvestimento__description{
+    width: 90%;
+    padding-bottom: 4rem; 
+  }
+  .forminvestimento__form{
+    position: inherit;
+    width: 90%; 
+    height: 30rem;
+  }
+
+  .esolar-funcionamento{
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .esolar-funcionamento__background{
+    flex-direction: column-reverse;
+  }
+  .esolar-funcionamento__video{
+    width: 100%;
+  }
+  .esolar-funcionamento__description{
+    width: 100%;
+    text-align: center; 
+    padding-bottom: 2rem; 
+  }
+
+  .footer{
+    display: flex; 
+    flex-direction: column;
+  }
+  .footer__items{
+    flex-direction: column;
+    padding: 2rem 0rem; 
+  }
+  .footer__item{
+    padding: 0rem 0rem; 
+  }
+  .esolar-duvidas__container h2{
+    font-size: 2.5rem; 
+  }
+
+  .esolar-duvidas__accordion:has(.active) span{
+    text-wrap: wrap; 
+    text-align: left;
+    font-size: 1.8rem;
+  
+  }
+
+  .esolar-duvidas__accordion-header button img{
+    width: 15%;
+    
+  }
+
+}
+
+/* Ajustes para telas menores que 480px (smartphones muito pequenos) */
+@media screen and (max-width: 480px) {
+  .esolar-beneficios__title h2 {
+    font-size: 2rem;
+  }
+
+  .esolar-beneficios__icon {
+    width: 18%;
+    height: 2.8rem;
+  }
+
+  .esolar-beneficios__content h2 {
+    font-size: 1.8rem;
+  }
+
+  .esolar-beneficios__content span {
+    font-size: 4.5rem;
+    top: 5px;
+    right: 10px;
+  }
+
+  .esolar-beneficios__box p {
+    font-size: 1rem;
+  }
+
+  .forminvestimento__background{
+    width: 90%;
+    flex-direction: column;
+    position: inherit;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 3rem 2rem; 
+    margin: 0rem; 
+    margin-top: 2rem; 
+  
+  }
+
+  .forminvestimento__description{
+    width: 100%;
+    padding-bottom: 4rem; 
+  }
+
+  .forminvestimento__description p {
+    font-size: 1.2rem; 
+  }
+
+  .forminvestimento__description h2{
+    font-size: 2rem; 
+  }
+
+  
+  .forminvestimento__form{
+    position: inherit;
+    width: 90%; 
+    height: 25rem;
+  }
+
+  .forminvestimento__input-group label{
+    font-size: 1rem; 
+  }
+
+  .forminvestimento__input-group input{
+    font-size: 1rem; 
+  }
+
+  .forminvestimento__input-group select{
+    font-size: 1rem; 
+  }
+
+
+  .forminvestimento__button button{
+    padding: 0.3rem 2rem;
+    font-size: 2rem;  
+    margin-top: 2rem; 
+  }
+
+  .forminvestimento__resultado h2{
+    font-size: 1.5rem; 
+  }
+  .forminvestimento__resultado p{
+    font-size: 1rem; 
+  }
+
+  .esolar-beneficios__card{
+    width: 70%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .esolar-funcionamento{
+    padding-left: 0rem; 
+    padding-right: 0rem; 
+    padding-top: 2.5rem; 
+    padding-bottom: 2.5rem; 
+  }
+
+  .esolar-funcionamento__video{
+    width: 100%;
+  }
+  .esolar-funcionamento__description{
+    width: 100%;
+    text-align: center; 
+    padding-bottom: 2rem; 
+  }
+
+  .esolar-beneficios__card {
+    height: 25rem; 
+    width: 80%;
+    margin: 1rem 0;
+  }
+
+  .esolar-beneficios__box {
+    padding: 1rem;
+  }
+
+  .esolar-beneficios__icon {
+    width: 20%;
+    height: 3rem;
+  }
+
+  .esolar-beneficios__content span {
+    font-size: 4rem;
+  }
+
+  .esolar-beneficios__content h2 {
+    font-size: 1.8rem;
+  }
+
+  .esolar-beneficios__box p {
+    font-size: 0.9rem;
+  }
+
+}

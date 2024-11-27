@@ -19,26 +19,51 @@
 </head>
 
 <body>
-    <header id="navbar" class="navbar">
-        <div class="navbar__logo">
-            <a href=../../index.html>
-                <img src="../assets/img/LogoProjetoHope8.png" alt="Logo do Projeto" />
-            </a>
-        </div>
-        <nav>
-            <ul class="navbar__items">
-                <li class="navbar__item"><a href="../../index.html">início</a></li>
-                <li class="navbar__item dropdown">
-                    <a href="#">energias renováveis</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="../energiasolar/index.html">energia solar</a></li>
-                        <li><a href="../energiahidrelétrica/index.html">energia hidrelétrica</a></li>
-                        <li id="dropdown-eolica"><a href="../energiaeolica/index.html">energia eólica</a></li>
+    <header>
+        <div class="navbar" id="navbar">
+            <div class="navbar__logo">
+                <a href="../../index.html">
+                    <img src="../assets/img/LogoProjetoHope8.png" alt="Logo do Projeto" />
+                </a>
+            </div>
+                <nav>
+                    <ul class="navbar__items">
+                        <li class="navbar__item"><a href="../../index.html">início</a></li>
+                        <li class="navbar__item dropdown">
+                            <a href="#">energias renováveis</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../energiasolar/index.html">energia solar</a></li>
+                                <li><a href="../energiahidrelétrica/index.html">energia hidrelétrica</a></li>
+                                <li id="dropdown-eolica"><a href="../energiaeolica/index.html">energia eólica</a></li>
+                            </ul>
+                        </li>
+                        <li class="navbar__item"><a href="https://linktr.ee/victorbrotto ">quem somos</a></li>
                     </ul>
-                </li>
-                <li class="navbar__item"><a href="https://linktr.ee/victorbrotto ">quem somos</a></li>
-            </ul>
-        </nav>
+                                  
+                    <div class="navbar__menu-icon">
+                        <button onclick="menuShow()"><i class="fa-solid fa-bars"></i></button>
+                    </div> 
+
+            
+            </nav>
+        
+        </div>
+           
+            <div class="navbar__mobile">
+                <ul class="navbar__items">
+                    <li class="navbar__item"><a href=../../index.html>início</a></li>
+                    <li class="navbar__item dropdown">
+                        <a href="#">energias renováveis</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="views/energiasolar/index.html">energia solar</a></li>
+                            <li><a href="views/energiahidrelétrica/index.html">energia hidrelétrica</a></li>
+                            <li id="dropdown-eolica"><a href="views/energiaeolica/index.html">energia eólica</a></li>
+                        </ul>
+                    </li>
+                    <li class="navbar__item"><a href="https://linktr.ee/victorbrotto ">quem somos</a></li>
+                </ul>
+            </div>
+      
     </header>
 
     <section>
@@ -66,9 +91,7 @@
             <div class="esolar-beneficios__card" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">
                 <div class="esolar-beneficios__box">
                     <div class="esolar-beneficios__content">
-                        <div class="esolar-beneficios__icon">
-                            <i class="fas fa-leaf icone-leaf"></i>
-                        </div>
+                        <div class="esolar-beneficios__icon">  <i class="fas fa-leaf icone-leaf"></i> </div>
                         <span>02</span>
                         <h2>baixas emissões de gases de efeito estufa</h2>
                         <p> As usinas hidrelétricas emitem poucos poluentes comparadas às fontes fósseis, ajudando a
@@ -256,11 +279,11 @@
     <footer>
         <div class="footer">
             <ul class="footer__items">
-                <li class="footer__item"><a href="../home/index.html">Início</a></li>
+                <li class="footer__item"><a href="../../index.html">início</a></li>
                 <li class="footer__item">
-                    <a href="#">Energias renováveis</a>
+                    <a href="#">energias renováveis</a>
                 </li>
-                <li class="footer__item"><a href="https://linktr.ee/victorbrotto ">Quem somos</a></li>
+                <li class="footer__item"><a href="https://linktr.ee/victorbrotto ">quem somos</a></li>
             </ul>
             <div class="footer__logo">
                 <p>2024 &copy; Projeto Hope</p>
@@ -279,5 +302,7 @@
 <script>
     AOS.init();
 </script>
+
+<script src="../styles/global.js"> </script> 
 
 </html>

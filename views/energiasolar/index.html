@@ -19,26 +19,51 @@
 </head>
 
 <body>
-    <header id="navbar" class="navbar">
-        <div class="navbar__logo">
-            <a href=../../index.html>
-                <img src="../assets/img/LogoProjetoHope8.png" alt="Logo do Projeto" />
-            </a>
-        </div>
-        <nav>
-            <ul class="navbar__items">
-                <li class="navbar__item"><a href="../../index.html">início</a></li>
-                <li class="navbar__item dropdown">
-                    <a href="#">energias renováveis</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="../energiasolar/index.html">energia solar</a></li>
-                        <li><a href="../energiahidrelétrica/index.html">energia hidrelétrica</a></li>
-                        <li id="dropdown-eolica"><a href="../energiaeolica/index.html">energia eólica</a></li>
+    <header>
+        <div class="navbar" id="navbar">
+            <div class="navbar__logo">
+                <a href="../../index.html">
+                    <img src="../assets/img/LogoProjetoHope8.png" alt="Logo do Projeto" />
+                </a>
+            </div>
+                <nav>
+                    <ul class="navbar__items">
+                        <li class="navbar__item"><a href="../../index.html">início</a></li>
+                        <li class="navbar__item dropdown">
+                            <a href="#">energias renováveis</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../energiasolar/index.html">energia solar</a></li>
+                                <li><a href="../energiahidrelétrica/index.html">energia hidrelétrica</a></li>
+                                <li id="dropdown-eolica"><a href="../energiaeolica/index.html">energia eólica</a></li>
+                            </ul>
+                        </li>
+                        <li class="navbar__item"><a href="https://linktr.ee/victorbrotto ">quem somos</a></li>
                     </ul>
-                </li>
-                <li class="navbar__item"><a href="https://linktr.ee/victorbrotto ">quem somos</a></li>
-            </ul>
-        </nav>
+                                  
+                    <div class="navbar__menu-icon">
+                        <button onclick="menuShow()"><i class="fa-solid fa-bars"></i></button>
+                    </div> 
+
+            
+            </nav>
+        
+        </div>
+           
+            <div class="navbar__mobile">
+                <ul class="navbar__items">
+                    <li class="navbar__item"><a href=#>início</a></li>
+                    <li class="navbar__item dropdown">
+                        <a href="#">energias renováveis</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="views/energiasolar/index.html">energia solar</a></li>
+                            <li><a href="views/energiahidrelétrica/index.html">energia hidrelétrica</a></li>
+                            <li id="dropdown-eolica"><a href="views/energiaeolica/index.html">energia eólica</a></li>
+                        </ul>
+                    </li>
+                    <li class="navbar__item"><a href="https://linktr.ee/victorbrotto ">quem somos</a></li>
+                </ul>
+            </div>
+      
     </header>
 
     <section>
@@ -174,6 +199,7 @@
                 <div class="forminvestimento__form" data-aos="fade-left" data-aos-duration="500" data-aos-once="true">
 
                     <form>
+                        <div class="forminvestimento__content">
                         <div class="forminvestimento__input-group">
                             <div class="forminvestimento__input-box group">
                                 <label>Potência da placa solar</label>
@@ -204,24 +230,21 @@
 
                             <div class="forminvestimento__input-box">
                                 <label>Consumo mensal da residência (em kWh/mês)</label>
-                                <input id="consumo" type="text" placeholder="Ex.: 200" required>
+                                <input id="consumo" type="number" placeholder="Ex.: 200" required>
                             </div>
+                            <label id="erroMensagem" class="forminvestimento__erro">
+                                Por favor, preencha todos os campos corretamente.
+                            </label>
                         </div>
-                        <!-- Lucas: onde aparece o resultado (teste) -->
-                        <div>
-                            <Strong>
-                                <p id="textoResultado">Resultado: </p>
-                                <div id="resultado">---</div>
-                            </Strong>
-                        </div>
-
                         <div class="forminvestimento__button" data-aos="zoom-in" data-aos-duration="1000"
                             data-aos-once="true">
                             <!-- Lucas: coloque o type porque queria testar se ele parava de ataulizar a página -->
                             <button type="button" onclick="preencherFormularioSimulacao(event)">calcular</button>
-                            <!-- <button type="button">calcular</button>  -->
+                
 
                         </div>
+                    </div>
+
                     </form>
                 </div>
             </div>
@@ -343,7 +366,7 @@
     <footer>
         <div class="footer">   
             <ul class="footer__items">
-                <li class="footer__item"><a href="/index.html">início</a></li>
+                <li class="footer__item"><a href="../../index.html">início</a></li>
                 <li class="footer__item">
                     <a href="#">energias renováveis</a>
                 </li>
@@ -366,5 +389,6 @@
 <script>
     AOS.init();
 </script>
+<script src="../styles/global.js"></script>
 
 </html>

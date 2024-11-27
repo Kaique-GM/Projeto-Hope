@@ -19,27 +19,53 @@
 </head>
 
 <body>
-    <header id="navbar" class="navbar">
-        <div class="navbar__logo">
-            <a href=../../index.html>
-                <img src="../assets/img/LogoProjetoHope8.png" alt="Logo do Projeto" />
-            </a>
-        </div>
-        <nav>
-            <ul class="navbar__items">
-                <li class="navbar__item"><a href="../../index.html">início</a></li>
-                <li class="navbar__item dropdown">
-                    <a href="#">energias renováveis</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="../energiasolar/index.html">energia solar</a></li>
-                        <li><a href="../energiahidrelétrica/index.html">energia hidrelétrica</a></li>
-                        <li id="dropdown-eolica"><a href="../energiaeolica/index.html">energia eólica</a></li>
+    <header>
+        <div class="navbar" id="navbar">
+            <div class="navbar__logo">
+                <a href="../../index.html">
+                    <img src="../assets/img/LogoProjetoHope8.png" alt="Logo do Projeto" />
+                </a>
+            </div>
+                <nav>
+                    <ul class="navbar__items">
+                        <li class="navbar__item"><a href="../../index.html">início</a></li>
+                        <li class="navbar__item dropdown">
+                            <a href="#">energias renováveis</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../energiasolar/index.html">energia solar</a></li>
+                                <li><a href="../energiahidrelétrica/index.html">energia hidrelétrica</a></li>
+                                <li id="dropdown-eolica"><a href="../energiaeolica/index.html">energia eólica</a></li>
+                            </ul>
+                        </li>
+                        <li class="navbar__item"><a href="https://linktr.ee/victorbrotto ">quem somos</a></li>
                     </ul>
-                </li>
-                <li class="navbar__item"><a href="https://linktr.ee/victorbrotto ">quem somos</a></li>
-            </ul>
-        </nav>
+                                  
+                    <div class="navbar__menu-icon">
+                        <button onclick="menuShow()"><i class="fa-solid fa-bars"></i></button>
+                    </div> 
+
+            
+            </nav>
+        
+        </div>
+           
+            <div class="navbar__mobile">
+                <ul class="navbar__items">
+                    <li class="navbar__item"><a href=#>início</a></li>
+                    <li class="navbar__item dropdown">
+                        <a href="#">energias renováveis</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="views/energiasolar/index.html">energia solar</a></li>
+                            <li><a href="views/energiahidrelétrica/index.html">energia hidrelétrica</a></li>
+                            <li id="dropdown-eolica"><a href="views/energiaeolica/index.html">energia eólica</a></li>
+                        </ul>
+                    </li>
+                    <li class="navbar__item"><a href="https://linktr.ee/victorbrotto ">quem somos</a></li>
+                </ul>
+            </div>
+      
     </header>
+
 
     <section>
         <div class="esolar-beneficios__title">
@@ -69,7 +95,7 @@
                             <i class="fas fa-leaf icone-leaf"></i>
                         </div>
                         <span>02</span>
-                        <h2>baixas Emissões de Gases de Efeito Estufa</h2>
+                        <h2>baixas emissões de gases de efeito estufa</h2>
                         <p> As usinas eólicas emitem praticamente nenhum poluente, ajudando a reduzir as emissões de
                             gases de efeito estufa.</p>
                     </div>
@@ -83,7 +109,7 @@
                             <i class="fi fi-rs-bolt"></i>
                         </div>
                         <span>03</span>
-                        <h2>capacidade de Geração Contínua</h2>
+                        <h2>capacidade de geração contínua</h2>
                         <p>Usinas eólicas podem gerar energia continuamente, aproveitando a força do vento,
                             principalmente em regiões com ventos constantes.</p>
                     </div>
@@ -109,7 +135,7 @@
                         <div class="esolar-beneficios__icon"><i class="fi fi-rs-shield"></i>
                         </div>
                         <span>05</span>
-                        <h2>segurança Energética</h2>
+                        <h2>segurança energética</h2>
                         <p> A energia eólica assegura uma geração contínua de eletricidade, contribuindo para a
                             estabilidade energética de um país, desde que haja ventos suficientes.</p>
                     </div>
@@ -121,7 +147,7 @@
                     <div class="esolar-beneficios__content">
                         <div class="esolar-beneficios__icon"><i class="fa fa fa-wind"></i></div>
                         <span>06</span>
-                        <h2>baixo Impacto Ambiental</h2>
+                        <h2>baixo impacto ambiental</h2>
                         <p> Muitas usinas eólicas podem ser construídas em áreas pouco afetadas pela urbanização, como
                             regiões rurais ou offshore, minimizando o impacto ambiental.</p>
                     </div>
@@ -254,7 +280,7 @@
     <footer>
         <div class="footer">
             <ul class="footer__items">
-                <li class="footer__item"><a href="../home/index.html">início</a></li>
+                <li class="footer__item"><a href="../../index.html">início</a></li>
                 <li class="footer__item">
                     <a href="#">energias renováveis</a>
                 </li>
