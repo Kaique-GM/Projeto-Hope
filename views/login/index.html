@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar" id="navbar">
+            <div class="navbar__logo">
+                <a href="../../index.html">
+                    <img src="../assets/img/LogoProjetoHope8.png" alt="Logo do Projeto" />
+                </a>
+            </div>
+            <nav>
+                <ul class="navbar__items">
+                    <li class="navbar__item"><a href="../../index.html">início</a></li>
+                    <li class="navbar__item dropdown">
+                        <a href="#">energias renováveis</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../energiasolar/index.html">energia solar</a></li>
+                            <li><a href="../energiahidrelétrica/index.html">energia hidrelétrica</a></li>
+                            <li id="dropdown-eolica"><a href="../energiaeolica/index.html">energia eólica</a></li>
+                        </ul>
+                    </li>
+                    <li class="navbar__item"><a href="https://linktr.ee/victorbrotto ">quem somos</a></li>
+                </ul>
+
+                <div class="navbar__menu-icon">
+                    <button onclick="menuShow()"><i class="fa-solid fa-bars"></i></button>
+                </div>
+
+
+            </nav>
+
+        </div>
+
+        <div class="navbar__mobile">
+            <ul class="navbar__items">
+                <li class="navbar__item"><a href=#>início</a></li>
+                <li class="navbar__item dropdown">
+                    <a href="#">energias renováveis</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="views/energiasolar/index.html">energia solar</a></li>
+                        <li><a href="views/energiahidrelétrica/index.html">energia hidrelétrica</a></li>
+                        <li id="dropdown-eolica"><a href="views/energiaeolica/index.html">energia eólica</a></li>
+                    </ul>
+                </li>
+                <li class="navbar__item"><a href="https://linktr.ee/victorbrotto ">quem somos</a></li>
+            </ul>
+        </div>
+
+    </header>
+
+    <div class="forms-login">
+        <!-- Formulário de Login -->
+        <form id="login-form" class="form active">
+            <h2>login</h2>
+            <input type="text" placeholder="usuário" required>
+            <input type="password" placeholder="senha" required>
+            <button type="submit">entrar</button>
+            <p>não tem uma conta? <a href="#" id="show-register">cadastre-se</a></p>
+        </form>
+    </div>
+    <div class="forms-registro">
+        <!-- Formulário de Cadastro -->
+        <form id="register-form" class="form">
+            <h2>cadastro</h2>
+            <input type="text" placeholder="nome de usuário" required>
+            <input type="email" placeholder="e-mail" required>
+            <input type="password" placeholder="senha" required>
+            <button type="submit">cadastrar</button>
+            <p>já tem uma conta? <a href="#" id="show-login">login</a></p>
+        </form>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
